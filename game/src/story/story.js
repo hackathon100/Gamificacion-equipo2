@@ -5,6 +5,7 @@ const entrance = require("./bg/entrance.jpeg");
 const soviet2 = require("./bg/soviet2.jpg");
 // bgm
 const take = require("./bgm/take.mp3");
+const anthem = require("./bgm/soviet-march.mp3");
 // speakers
 const b = "Block";
 // sprites
@@ -17,7 +18,7 @@ const nk = require("./sprites/mono.png");
 let story = [
   {
     bg: soviet2,
-    bgm: take,
+    bgm: anthem,
     sprite: nk,
     speaker: b,
     text: "In this demo, we'll go over through the majority of the features that this application offers."
