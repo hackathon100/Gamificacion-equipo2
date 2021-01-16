@@ -1,0 +1,33 @@
+.header-container {
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 16px 0px;
+
+  .header-title {
+    font-weight: bold;
+  }
+
+  .header-desc {
+    color: $subtitle-color;
+  }
+
+  svg {
+    font-size: 18px;
+    color: $font-base-color;
+  }
+
+  button {
+    box-shadow: $elevation-shadow-1dp;
+    padding: 6px;
+    display: none;
+  }
+
+  .search {
+    * {
+      display: none;
+    }
+    font-size: 14px;
+    color: $subtitle-color;
+  }
+}

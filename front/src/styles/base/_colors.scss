@@ -1,0 +1,72 @@
+/* -------------------------------- Color Palette --------------------------- */
+$san-marino-blue-darkest: #1a264a;
+$san-marino-blue-darker: #26396f;
+$san-marino-blue-dark: #334c94;
+$san-marino-blue: #405fb9; // rgb(64, 95, 185)
+$san-marino-blue-light: #667fc7;
+$san-marino-blue-lighter: #8c9fd5;
+$san-marino-blue-lightest: #eceff8;
+
+$pelorous-blue-darkest: #16454d;
+$pelorous-blue-darker: #226873;
+$pelorous-blue-dark: #2d8a9a;
+$pelorous-blue: #38adc0; // rgb(56, 173, 192)
+$pelorous-blue-light: #60bdcd;
+$pelorous-blue-lighter: #88ced9;
+$pelorous-blue-lightest: #afdee6;
+
+$gray-lightest: #f3f4f6;
+$gray-lighter: #ececec;
+$gray-light: #b0b0b0;
+$gray: #8d8d8d;
+$gray-dark: #302e35;
+$gray-darker: #636365;
+$gray-darkest: #19191c; // rgb(25, 25, 28)
+
+$spring-green-dark: #00994c;
+$spring-green: #00ff7f; // rgb(0, 255, 127);
+
+$radical-red-dark: #cc2a4b;
+$radical-red: #ff355e;
+
+$white: #ffffff;
+$black: #000000;
+$transparent: rgba(0, 0, 0, 0);
+
+/* ------------------------------- Theme Colors ---------------------------- */
+$secondary-darkest: $pelorous-blue-darkest;
+$secondary-darker: $pelorous-blue-darker;
+$secondary-dark: $pelorous-blue-dark;
+$secondary: $pelorous-blue;
+$secondary-light: $pelorous-blue-light;
+$secondary-lighter: $pelorous-blue-lighter;
+$secondary-lightest: $pelorous-blue-lightest;
+
+$primary-darkest: $san-marino-blue-darkest;
+$primary-darker: $san-marino-blue-darker;
+$primary-dark: $san-marino-blue-dark;
+$primary: $san-marino-blue;
+$primary-light: $san-marino-blue-light;
+$primary-lighter: $san-marino-blue-lighter;
+$primary-lightest: $san-marino-blue-lightest;
+
+$success: $spring-green;
+$error: $radical-red;
+
+$inactive-color: $gray-darker;
+$subtitle-color: $gray-light;
+$border-color: $gray-lighter;
+
+$font-base-color: $white;
+$font-base-alt-color: $black;
+
+//--------------------------------- App Background -----------------------------
+$bg-color: $primary-lightest;
+$bg-color-alt: $gray-lightest;
+
+// ------------------------------------ Sidebar -------------------------------
+$sidebar-bg: $gray-darkest !default;
+$sidebar-text-color: $inactive-color !default;
+
+// ------------------------------------ RightPanel -------------------------------
+$right-panel-bg-color: $bg-color-alt;

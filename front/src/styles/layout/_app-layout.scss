@@ -1,0 +1,45 @@
+/*App Layout Styles*/
+#app-site,
+.app-main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#app-site {
+  background: linear-gradient(45deg, rgba(25, 25, 28, 0.88) 0%, rgba(25, 25, 28, 1) 100%);
+}
+
+.app-main {
+  background: url('../../assets/images/bg-pattern.svg') no-repeat center center fixed;
+  background-color: transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.app-sidebar {
+  @include display-flex(flex, column, nowrap);
+  width: $side-nav-width;
+  min-width: $side-nav-width;
+  max-width: $side-nav-width;
+  background-color: $bg-color;
+  height: 100%;
+}
+
+.app-main-container {
+  @include display-flex(flex, column, nowrap);
+  width: 100%;
+  overflow: hidden;
+}
+
+.app-header {
+  min-height: $app-bar-height;
+}
+
+.app-content {
+  overflow: auto;
+  position: relative;
+  width: 100%;
+}

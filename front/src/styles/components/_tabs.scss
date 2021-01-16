@@ -1,0 +1,31 @@
+.tabs-container {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+  overflow: hidden;
+}
+
+.tabs-header {
+  position: relative;
+}
+
+.tabs-header .tab {
+  position: relative;
+  font-size: 14px;
+  color: $inactive-color;
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: solid 4px $primary;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+  &:hover {
+    color: $font-base-color;
+  }
+  &.is-selected {
+    color: $font-base-color;
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+}

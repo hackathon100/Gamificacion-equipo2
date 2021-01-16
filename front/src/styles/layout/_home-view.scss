@@ -1,0 +1,146 @@
+.home-view-container {
+  .line-svg {
+    position: absolute;
+    height: 70px;
+    bottom: 30px;
+    right: 20px;
+    path {
+      stroke: $secondary-dark;
+    }
+  }
+
+  .show-more-button {
+    &:hover {
+      text-decoration: none;
+    }
+    height: 145px;
+    button {
+      height: 100%;
+    }
+  }
+
+  .MuiCard-root {
+    margin-right: 16px;
+    overflow: visible;
+    max-height: 145px;
+    transition: min-height 0.5s, min-width 0.5s ease;
+    min-width: 100px;
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(-90deg, $gray-darkest 40%, rgba(0, 0, 0, 0.4) 100%);
+      z-index: 1;
+    }
+
+    .MuiCardContent-root {
+      position: relative;
+      min-width: 250px;
+      &:last-child {
+        padding-bottom: 16px !important;
+      }
+      .unselected-hidden {
+        transition: opacity 1s;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+      }
+      .card-title-container {
+        margin-bottom: 12px;
+        .card-title,
+        .card-date {
+          @extend .subtitle;
+          font-size: 12px;
+          margin-bottom: 0px;
+        }
+      }
+
+      .card-content {
+        text-align: justify;
+        .card-content-value {
+          font-size: 24px;
+          font-weight: bold;
+        }
+        .card-content-unit {
+          font-size: 20px;
+        }
+      }
+
+      .card-info {
+        text-align: justify;
+        font-size: 12px;
+        @extend .subtitle;
+        .card-info-value {
+          font-weight: bold;
+        }
+      }
+    }
+
+    &.fake {
+      div {
+        border-radius: 10px;
+      }
+      .card-title-container {
+        background-color: $gray-darker;
+        width: 40%;
+        height: 10px;
+        margin-bottom: 18px;
+      }
+
+      .card-content {
+        background-color: $gray-darker;
+        width: 70%;
+        height: 20px;
+        margin-bottom: 8px;
+      }
+
+      .card-info {
+        background-color: $gray-darker;
+        width: 50%;
+        height: 10px;
+        margin-top: 18px;
+      }
+    }
+
+    &.selected {
+      background: linear-gradient(-45deg, rgba(25, 25, 28, 1) 50%, rgba(56, 173, 192, 0.6) 100%);
+      height: fit-content;
+      max-height: 200px;
+      min-width: 300px;
+
+      .overlay {
+        display: none;
+      }
+
+      .unselected-hidden {
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .MuiCardContent-root {
+        .card-title-container {
+          margin-bottom: 32px;
+          .card-title,
+          .card-date {
+            color: #ffffff;
+            font-size: 16px;
+          }
+        }
+
+        .card-content {
+          .card-content-value {
+            font-size: 40px;
+          }
+          .card-content-unit {
+            font-size: 26px;
+          }
+        }
+
+        .card-info {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

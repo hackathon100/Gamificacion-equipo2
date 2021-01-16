@@ -1,0 +1,53 @@
+.table-with-pagination-container {
+  .MuiTableContainer-root {
+    overflow-x: inherit;
+  }
+
+  .table-header {
+    th {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 10px;
+      padding: 12px;
+      padding-left: 28px;
+      padding-right: 28px;
+      color: $inactive-color;
+      width: 25%;
+      border-bottom: none;
+    }
+  }
+  .table-pagination,
+  .table-header th {
+    // border: none;
+  }
+
+  tbody {
+    // border: none;
+    // border-radius: 20px;
+  }
+  tbody tr:not(:last-child) {
+    @extend .contained-section;
+    border-radius: 0px !important;
+    box-shadow: none;
+    border: 1px solid $gray-dark;
+    td {
+      font-size: 12px;
+      padding-left: 28px;
+      padding-right: 28px;
+      color: $white;
+      border-bottom: none;
+      a:hover {
+        color: $white;
+      }
+    }
+    td:last-child {
+      border-right: $gray-dark 1px solid;
+    }
+  }
+
+  // tbody tr:first-child {
+  //   td {
+  //     border-top: none;
+  //   }
+  // }
+}

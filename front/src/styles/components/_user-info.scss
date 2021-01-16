@@ -1,0 +1,11 @@
+.user-info-container {
+  .user-name {
+    color: $white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .user-email {
+    font-size: 12px;
+    color: $inactive-color;
+  }
+}

@@ -1,0 +1,429 @@
+/* Base Styles */
+html {
+  height: 100%;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body.ios-mobile-view-height {
+  // height: auto !important;
+  overflow: visible !important;
+}
+
+.app-login-container {
+  color: $font-base-alt-color !important;
+  width: 100%;
+  margin-top: -24px;
+  margin-bottom: -24px;
+  margin-left: -39px;
+  width: 100vw;
+  height: 100vh;
+
+  .MuiFormLabel-root {
+    color: $inactive-color;
+  }
+  .MuiOutlinedInput-root,
+  .MuiOutlinedInput-root:hover {
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $inactive-color;
+    }
+  }
+  input {
+    color: $font-base-alt-color;
+  }
+  .logo-container {
+    display: none;
+    a img {
+      position: absolute;
+      bottom: 35px;
+      right: 15px;
+      z-index: 1;
+      height: 30px;
+    }
+
+    // &:after {
+    //   position: absolute;
+    //   content: '';
+    //   width: 0;
+    //   right: 0;
+    //   height: 0;
+    //   bottom: 0;
+    //   border-left: 180px solid transparent;
+    //   border-bottom: 180px solid $white;
+    //   -moz-transform: scale(0.999);
+    //   -webkit-backface-visibility: hidden;
+    // }
+  }
+  .app-login-content {
+    min-width: 320px;
+    max-width: 367px;
+    padding: 32px;
+  }
+  .app-login-main-content {
+    background-color: $white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    .app-logo-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      background-color: $bg-color;
+      a img {
+        height: 80px;
+      }
+    }
+  }
+}
+
+.app-header,
+.app-header .app-main-header,
+.app-header .app-toolbar {
+  background: $bg-color;
+  min-height: 56px;
+  height: 56px;
+}
+
+/* Spinner and page progress bar */
+#nprogress .bar {
+  z-index: 5000 !important;
+  background: $secondary !important;
+}
+
+#nprogress .peg {
+  @include box-shadow(0 0 10px $secondary, 0 0 5px $secondary !important);
+}
+
+#nprogress .spinner {
+  z-index: 5000 !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: $secondary !important;
+  border-left-color: $secondary !important;
+}
+
+// Scrollbar
+// Chrome and Safary
+*::-webkit-scrollbar {
+  width: 4px; /* width of the entire scrollbar */
+  height: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: $primary-lightest; /* color of the tracking area */
+}
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, rgba(64, 95, 185, 0.8) 0%, rgba(56, 173, 192, 0.8) 100%);
+  border-radius: 40px; /* roundness of the scroll thumb */
+}
+
+// Firefox
+* {
+  scrollbar-width: thin; /* "auto" or "thin"  */
+  scrollbar-color: $subtitle-color $border-color; /* scroll thumb & track */
+}
+
+.close-button {
+  position: absolute !important;
+  color: $subtitle-color !important;
+  top: 8px;
+  right: 8px;
+  height: 10px;
+  width: 10px;
+}
+
+.contained-section {
+  // border: 2px solid $gray-dark;
+  box-shadow: $elevation-shadow-1dp;
+  background-color: rgba(25, 25, 28, 0.3);
+  border-radius: 4px;
+  padding: 24px;
+  h6 {
+    font-weight: bold;
+  }
+}
+
+.subtitle {
+  color: $subtitle-color;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.max-height-300 {
+  max-height: 300px;
+}
+
+.text-box-md {
+  max-width: 150px;
+}
+
+.page-heading {
+  & .breadcrumb {
+    display: flex;
+    align-items: center;
+    background-color: transparent !important;
+    margin-bottom: 0;
+    padding: 0px;
+
+    .breadcrumb-item + .breadcrumb-item:before {
+      color: $inactive-color;
+      content: '—';
+    }
+
+    &-item {
+      color: $inactive-color;
+
+      &.active {
+        color: $font-base-color;
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    margin-bottom: 18px;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// plug icon
+.icon-blue-static {
+  color: $primary-dark;
+}
+
+.icon-red {
+  color: $secondary;
+  margin-right: 2px;
+  @include animation('color-change-red 2s ease-in-out infinite');
+}
+
+.color-blue {
+  color: $primary;
+}
+
+.color-green {
+  color: $success;
+}
+
+.color-white {
+  color: $font-base-color;
+}
+
+.color-red {
+  color: $secondary;
+}
+
+// disabled a element
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.disabled > a {
+  display: inline-block;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+@media print {
+  @page {
+    size: auto;
+    margin: 0mm;
+  }
+
+  .app-header,
+  .side-nav {
+    display: none !important;
+  }
+  .app-main-content-wrapper {
+    padding: 0px !important;
+  }
+}
+
+.width-auto {
+  width: auto;
+}
+
+// Font sizes
+.font-size-4 {
+  font-size: 4px !important;
+}
+
+.font-size-6 {
+  font-size: 6px !important;
+}
+
+.font-size-8 {
+  font-size: 8px !important;
+}
+
+.font-size-10 {
+  font-size: 10px !important;
+}
+
+.font-size-12 {
+  font-size: 12px !important;
+}
+
+.font-size-14 {
+  font-size: 14px !important;
+}
+
+.font-size-16 {
+  font-size: 16px !important;
+}
+
+.font-size-18 {
+  font-size: 18px !important;
+}
+
+.font-size-20 {
+  font-size: 20px !important;
+}
+
+.font-size-22 {
+  font-size: 22px !important;
+}
+
+.font-size-24 {
+  font-size: 24px !important;
+}
+
+.font-size-26 {
+  font-size: 24px !important;
+}
+
+.font-size-28 {
+  font-size: 24px !important;
+}
+
+.font-size-30 {
+  font-size: 30px !important;
+}
+
+.font-size-32 {
+  font-size: 32px !important;
+}
+
+.font-size-34 {
+  font-size: 34px !important;
+}
+
+.font-size-36 {
+  font-size: 36px !important;
+}
+
+.font-size-42 {
+  font-size: 42px !important;
+}
+
+.font-size-44 {
+  font-size: 44px !important;
+}
+
+.font-size-46 {
+  font-size: 46px !important;
+}
+
+.font-size-48 {
+  font-size: 48px !important;
+}
+
+// Square sizes
+.size-10 {
+  width: 10px;
+  height: 10px;
+}
+
+.size-20 {
+  width: 20px;
+  height: 20px;
+}
+
+.size-30 {
+  width: 30px;
+  height: 30px;
+}
+
+.size-40 {
+  width: 40px;
+  height: 40px;
+}
+
+.size-50 {
+  width: 50px;
+  height: 50px;
+}
+
+.size-60 {
+  width: 60px;
+  height: 60px;
+}
+
+.size-70 {
+  width: 70px;
+  height: 70px;
+}
+
+.size-80 {
+  width: 80px;
+  height: 80px;
+}
+
+.size-90 {
+  width: 90px;
+  height: 90px;
+}
+
+.size-100 {
+  width: 100px;
+  height: 100px;
+}
+
+.size-110 {
+  width: 110px;
+  height: 110px;
+}
+
+.size-120 {
+  width: 120px;
+  height: 120px;
+}
+
+.bg-blue {
+  background-color: $primary !important;
+}
+
+.bg-white {
+  background-color: $font-base-color;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-red {
+  background-color: $secondary !important;
+}
+
+.positive-number {
+  color: $spring-green;
+}
+
+.negative-number {
+  color: $secondary;
+}

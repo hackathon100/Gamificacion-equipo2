@@ -1,0 +1,13 @@
+.onboarding-container {
+  padding: 32px;
+  .onboarding-step-container {
+    .step-text {
+      text-align: justify;
+      max-width: 400px;
+    }
+
+    .step-image {
+      margin-left: 24px;
+    }
+  }
+}

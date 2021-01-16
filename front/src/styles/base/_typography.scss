@@ -1,0 +1,150 @@
+/* --------------------------------- Variables ------------------------------*/
+// Set font families vars
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+$font-family-base: 'Varela Round', sans-serif;
+$font-family-headings: 'Varela Round', sans-serif;
+
+// Set text base size values vars
+$font-size-base: 1rem;
+$font-scale-ratio: 1.2; // Factor to be multiplied by $font-size-base to obtain a bigger text size;
+
+// Set default text color vars
+$headings-default-color: $font-base-color;
+$text-default-color: $font-base-color;
+
+// Set type scale vars
+$text-xs: calc(#{$font-size-base} / (#{$font-scale-ratio} * #{$font-scale-ratio}));
+$text-sm: calc(#{$font-size-base} / #{$font-scale-ratio});
+$text-md: calc(#{$font-size-base} * #{$font-scale-ratio});
+$text-lg: calc(#{$font-size-base} * #{$font-scale-ratio} * #{$font-scale-ratio});
+$text-xl: calc(
+  #{$font-size-base} * #{$font-scale-ratio} * #{$font-scale-ratio} * #{$font-scale-ratio}
+);
+$text-xxl: calc(
+  #{$font-size-base} * #{$font-scale-ratio} * #{$font-scale-ratio} * #{$font-scale-ratio} * #{$font-scale-ratio}
+);
+$text-xxxl: calc(
+  #{$font-size-base} * #{$font-scale-ratio} * #{$font-scale-ratio} * #{$font-scale-ratio} * #{$font-scale-ratio} *
+    #{$font-scale-ratio}
+);
+
+// Set line heights vars
+$headings-default-line-height: 1.2;
+$body-default-line-height: 1.4;
+
+// Set font weights vars
+$headings-default-font-weight: 400;
+$text-default-font-weight: normal;
+
+// Set spacing vars
+$space-xxxs: 0.25rem;
+$space-xxs: 0.375rem;
+$space-xs: 0.5rem;
+$space-sm: 0.75rem;
+$space-md: 1.25rem;
+$space-lg: 2rem;
+$space-xl: 3.25rem;
+$space-xxl: 5.25rem;
+$space-xxxl: 8.5rem;
+
+/* ------------------------------- General styles --------------------------- */
+body {
+  font-size: $font-size-base;
+  font-family: $font-family-base !important;
+  font-weight: $text-default-font-weight;
+  color: $text-default-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $font-family-headings;
+  font-weight: $headings-default-font-weight;
+}
+
+/* ----------------------------- Line heights ------------------------------- */
+body,
+p {
+  line-height: $body-default-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: $headings-default-line-height;
+}
+
+/* ----------------------------- Text size classes -------------------------- */
+.text-xs {
+  font-size: $text-xs;
+}
+
+.text-sm {
+  font-size: $text-sm;
+}
+
+.text-md,
+h4 {
+  font-size: $text-md;
+}
+
+.text-lg,
+h3 {
+  font-size: $text-lg;
+}
+
+.text-xl,
+h2 {
+  font-size: $text-xl;
+}
+
+.text-xxl,
+h1 {
+  font-size: $text-xxl;
+}
+
+.text-xxxl {
+  font-size: $text-xxl;
+}
+
+/* ----------------------------- Spacing styles ----------------------------- */
+h1,
+h2,
+h3,
+h4,
+form legend {
+  margin-bottom: $space-xxs;
+  line-height: $headings-default-line-height;
+}
+
+.text-container {
+  h2,
+  h3,
+  h4 {
+    margin-top: $space-sm;
+  }
+
+  ul,
+  ol,
+  p {
+    margin-bottom: $space-md;
+  }
+}
