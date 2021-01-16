@@ -245,7 +245,9 @@ let story = [
   {
     //TODO Transiciones/efectos
     speaker: JFK,
-    text: "Bobby, necesito que vayas a la embajada soviética y parlamentes con el embajador Anatoli Dobriynin, necesitamos predecir la respuesta que tendrá Moscú ante un protocolo de esta magnitud. Necesito que seas muy discreto. Que te acompañe “protagonista”",
+    text: "Bobby, necesito que vayas a la embajada soviética y parlamentes con el embajador Anatoli Dobriynin, necesitamos " + 
+          "predecir la respuesta que tendrá Moscú ante un protocolo de esta magnitud. Necesito que seas muy discreto. Que " + 
+          "te acompañe “protagonista”",
   },
   {
     //TODO Transiciones/efectos
@@ -260,12 +262,15 @@ let story = [
   {
     //TODO Transiciones/efectos
     speaker: RK,
-    text: "Embajador, digamos que existe la posibilidad de que sus barcos puedan ser detenidos por personal de la Marina estadounidense.",
+    text: "Embajador, digamos que existe la posibilidad de que sus barcos puedan ser detenidos por personal de la Marina " + 
+          "estadounidense.",
   },
   {
     //TODO Transiciones/efectos
     speaker: AD,
-    text: "Bueno, pues digamos que sí existe esa posibilidad, los barcos soviéticos no se detendrán, y más aún, está acción será considerada como un acto de guerra por parte del Kremlin. Por lo que si su supuesto es cierto Robert, debería ajustar los protocolos de la marina.",
+    text: "Bueno, pues digamos que sí existe esa posibilidad, los barcos soviéticos no se detendrán, y más aún, está acción " + 
+          "será considerada como un acto de guerra por parte del Kremlin. Por lo que si su supuesto es cierto Robert, debería " + 
+          "ajustar los protocolos de la marina.",
   },
   {
     //TODO Transiciones/efectos
@@ -278,11 +283,13 @@ let story = [
   },
   {
     speaker: "Robert", //TODO Robert Kennedy??
-    text: "No tenemos muy buenas noticias Jack. La detención del convoy soviético será tomado como un acto de guerra. Tenemos que enviar un asesor que se encargue de que la marina por nada del mundo le dispare a un navío soviético.",
+    text: "No tenemos muy buenas noticias Jack. La detención del convoy soviético será tomado como un acto de guerra. Tenemos " + 
+          "que enviar un asesor que se encargue de que la marina por nada del mundo le dispare a un navío soviético.",
   },
   {
     speaker: "General",
-    text: "Señor Presidente, un bloqueo sin la coacción de la fuerza no es realmente un bloqueo. La nación se vería débil ante la URSS y el Pacto de Varsovia.",
+    text: "Señor Presidente, un bloqueo sin la coacción de la fuerza no es realmente un bloqueo. La nación se vería débil ante " + 
+          "la URSS y el Pacto de Varsovia.",
   },
   {
     speaker: JFK,
@@ -297,15 +304,19 @@ let story = [
   },
   {
     speaker: "Asesor",
-    text: "Los soviéticos quieren negociar Señor. Retiraran los misiles a cambio de que declaremos publicamente que no invadiremos Cuba nunca más.",
+    text: "Los soviéticos quieren negociar Señor. Retiraran los misiles a cambio de que declaremos publicamente que no " + 
+          "invadiremos Cuba nunca más.",
   },
   {
     speaker: JFK,
-    text: "Suena bien. A pesar de que Cuba es una amenaza constante, probablemente sus relaciones con los soviéticos se vean afectadas por un trato como este.",
+    text: "Suena bien. A pesar de que Cuba es una amenaza constante, probablemente sus relaciones con los soviéticos se vean " + 
+          "afectadas por un trato como este.",
   },
   {
     speaker: RK,
-    text: "Tenemos un problema Jack, toda la prensa   está reportando que la invasión de Cuba es inminente e indeclinable. Si los espías y diplomáticos soviéticos lo creen, la guerra se podía desatar incluso antes de que podamos responder a este nuevo trato.",
+    text: "Tenemos un problema Jack, toda la prensa   está reportando que la invasión de Cuba es inminente e indeclinable. Si " + 
+          "los espías y diplomáticos soviéticos lo creen, la guerra se podía desatar incluso antes de que podamos responder a " + 
+          "este nuevo trato.",
   },
   {
     //TODO Transiciones/efectos
@@ -314,11 +325,14 @@ let story = [
   },
   {
     speaker: "General",
-    text: "Los soviéticos están exigiendo un nuevo acuerdo a través de Radio Moscú, Kruschev quiere que los EE.UU también retire los misiles de Turquía. Es inaceptable Señor, no podemos sacrificar la seguridad de un aliado a cambio de la nuestra, eso sería el fin de la OTAN.",
+    text: "Los soviéticos están exigiendo un nuevo acuerdo a través de Radio Moscú, Kruschev quiere que los EE.UU también retire " + 
+          "los misiles de Turquía. Es inaceptable Señor, no podemos sacrificar la seguridad de un aliado a cambio de la nuestra, " + 
+          "eso sería el fin de la OTAN.",
   },
   {
     speaker: JFK,
-    text: "En cualquier caso esos misiles están obsoletos, general, pero tiene razón, un conflicto con nuestros aliados en un momento como este sería un desequilibrió que no nos podemos dar el lujo de sufrir.",
+    text: "En cualquier caso esos misiles están obsoletos, general, pero tiene razón, un conflicto con nuestros aliados en un momento " + 
+          "como este sería un desequilibrió que no nos podemos dar el lujo de sufrir.",
   },
   {
     speaker: "Asesor",
@@ -330,7 +344,8 @@ let story = [
   },
   {
     speaker: "General",
-    text: "La Fuerza Aérea informa que una aeronave U-2 de reconocimiento no ha regresado de Cuba. Probablemente ha cayo en combate señor. Esto ha comenzado.",
+    text: "La Fuerza Aérea informa que una aeronave U-2 de reconocimiento no ha regresado de Cuba. Probablemente ha cayo en combate " + 
+          "señor. Esto ha comenzado.",
   },
   {
     speaker: JFK,
