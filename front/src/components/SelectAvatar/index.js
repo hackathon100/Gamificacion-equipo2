@@ -18,6 +18,7 @@ const SelectAvatar = ({ name }) => {
     <Pj4SVG height={250} />,
     <Pj5SVG height={250} />,
   ];
+
   return (
     <div className="select-avatar-container">
       <div className="select-avatar-header mb-5">

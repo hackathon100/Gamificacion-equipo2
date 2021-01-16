@@ -7,6 +7,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import { BiExit } from 'react-icons/bi';
 import IntlMessages from 'util/IntlMessages';
 import { userSignOut } from 'features/Auth';
+import { ReactComponent as Pj1SVG } from 'assets/images/pj-1.svg';
 
 const UserInfo = ({ userSignOut }) => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -25,45 +26,14 @@ const UserInfo = ({ userSignOut }) => {
   };
 
   return (
-    <div className="user-info-container d-flex flex-column align-items-center justify-content-center">
-      <div
-        role="button"
-        tabIndex={0}
-        className="d-flex align-items-center user-detail"
-        onClick={handleClick}
-      >
-        <div className="avatar-background mr-2">
-          <Avatar alt="..." src="https://via.placeholder.com/150x150" className="user-avatar " />
-        </div>
-        <div className="d-flex flex-column">
-          <span className="user-name mb-1">{`${firstName || 'User'} ${lastName || 'Info'}`}</span>
-          <span className="user-email subtitle">{email || 'email@example.com'}</span>
-        </div>
+    <div className="user-info-container">
+      <div className="user-info-header">
+        <h3>Bastián</h3>
+        <h4>Nivel 1 - Aprendíz</h4>
       </div>
-      <Menu
-        className="user-info"
-        id="simple-menu"
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleRequestClose}
-        PaperProps={{
-          style: {
-            minWidth: 120,
-            paddingTop: 0,
-            paddingBottom: 0,
-          },
-        }}
-      >
-        <MenuItem
-          onClick={() => {
-            handleRequestClose();
-            userSignOut();
-          }}
-        >
-          <BiExit className="mr-2" />
-          <IntlMessages id="popup.logout" />
-        </MenuItem>
-      </Menu>
+      <div>
+        <Pj1SVG />
+      </div>
     </div>
   );
 };
