@@ -366,15 +366,21 @@ let story = [
     text: "27 de octubre a las 19:30. Oficina Oval del Presidente, Washington D.C.",
   },
   {
-    text: "Los colaboradores más cercanos a Kennedy encontraron una forma de aceptar el trato sin romper la OTAN. Primero enviaron una carta pública aceptando el primer trato de Kruschev, NUNCA INVADIRÁN CUBA. Robert Kennedy y tu en persona llevaron el acuerdo al embajador soviético, pero con un segundo mensaje “top secret”: ",
+    text: "Los colaboradores más cercanos a Kennedy encontraron una forma de aceptar el trato sin romper la OTAN. Primero " + 
+          "enviaron una carta pública aceptando el primer trato de Kruschev, NUNCA INVADIRÁN CUBA. Robert Kennedy y tu en " + 
+          "persona llevaron el acuerdo al embajador soviético, pero con un segundo mensaje “top secret”: ",
   },
   {
     speaker: RK,
-    text: "Los oficiales quieren retribución por la caída del avión de reconocimiento, por lo que podemos aceptar públicamente solo el compromiso de no invasión de Cuba, pero no el retiro de los misiles en Turquía, al menos no públicamente. Embajador Dobriynin, acepten este trato y la promesa de este gobierno es que los misiles de Turquía habrán sido retirados de aquí a 5 meses. Sin embargo, si esta conversación se filtra, el trato se acaba.",
+    text: "Los oficiales quieren retribución por la caída del avión de reconocimiento, por lo que podemos aceptar públicamente " + 
+          "solo el compromiso de no invasión de Cuba, pero no el retiro de los misiles en Turquía, al menos no públicamente. " + 
+          "Embajador Dobriynin, acepten este trato y la promesa de este gobierno es que los misiles de Turquía habrán sido " + 
+          "retirados de aquí a 5 meses. Sin embargo, si esta conversación se filtra, el trato se acaba.",
   },
   {
     speaker: AD,
-    text: "Estimad@s, la discreción es parte imprescindible del trabajo diplomático. Sus condiciones serán celosamente comunicadas al Kremlin.",
+    text: "Estimad@s, la discreción es parte imprescindible del trabajo diplomático. Sus condiciones serán celosamente " + 
+          "comunicadas al Kremlin.",
   },
   {
     speaker: "",
@@ -382,16 +388,26 @@ let story = [
   },
   //TODO Arreglar textos (lo mas probable es que haya que separarlos porque son muy largos)
   {
-    text: "Kruschev y el Presidium aceptaron el trato, el EXCOM celebra y el mundo respira. De aquí en adelante se estableció una línea directa de comunicación entre Washington y Moscú que no tuviera demoras: haz conseguido EL TELÉFONO ROJO. Un paso más adelante para que podamos salvar nuestra realidad.",
+    text: "Kruschev y el Presidium aceptaron el trato, el EXCOM celebra y el mundo respira. De aquí en adelante se " + 
+          "estableció una línea directa de comunicación entre Washington y Moscú que no tuviera demoras: haz conseguido " + 
+          "EL TELÉFONO ROJO. Un paso más adelante para que podamos salvar nuestra realidad.",
   },
   {
-    text: "En 1968 EE.UU y la URSS firmaron el Tratado de No Proliferación Nuclear que limita la posesión de armas nucleares. La mayor parte de EXCOM nunca se enteró del intercambio de misiles secreto. Quedaron creyendo que la diplomacia de hierro respaldada por su poderío militar fue lo que les dio la victoria en esta crisis, y que si esto funcionó con un gran imperio como la Unión Soviética, como no va a servir contra un pequeño país… como Vietnam. Pero esa es otra historia.",
+    text: "En 1968 EE.UU y la URSS firmaron el Tratado de No Proliferación Nuclear que limita la posesión de armas " + 
+          "nucleares. La mayor parte de EXCOM nunca se enteró del intercambio de misiles secreto. Quedaron creyendo que " + 
+          "la diplomacia de hierro respaldada por su poderío militar fue lo que les dio la victoria en esta crisis, y " + 
+          "que si esto funcionó con un gran imperio como la Unión Soviética, como no va a servir contra un pequeño país… " + 
+          "como Vietnam. Pero esa es otra historia.",
   },
   {
-    text: "En 1963 J. F. Kennedy fue asesinado en Dallas mientras aún ejercía como presidente, convirtiéndose en el cuarto presidente estadounidense que muere en el ejercicio de su cargo. Su hermano Robert corrió una suerte similar: en 1968 fue abatido por un tirador mientras se encontraba en plena campaña presidencial en California. Un trágico destino para estos sujetos. Lamentablemente sabes que no podemos intervenir en las lineas temporales que ya han sido trazadas, solo procurar que los hilos sigan su camino para encontrar los artefactos (mágicos, faéricos, viles, oscuros, abisales, bla).",
+    text: "En 1963 J. F. Kennedy fue asesinado en Dallas mientras aún ejercía como presidente, convirtiéndose en el " + 
+          "cuarto presidente estadounidense que muere en el ejercicio de su cargo. Su hermano Robert corrió una suerte " + 
+          "similar: en 1968 fue abatido por un tirador mientras se encontraba en plena campaña presidencial en California. ",
   },
   {
-    text: "",
+    text: "Un trágico destino para estos sujetos. Lamentablemente sabes que no podemos intervenir en las lineas temporales " + 
+          "que ya han sido trazadas, solo procurar que los hilos sigan su camino para encontrar los artefactos (mágicos, " + 
+          "faéricos, viles, oscuros, abisales, bla).",
   },
   //TODO USA MALAS RESPUESTAS
   //Fin USA PATH
