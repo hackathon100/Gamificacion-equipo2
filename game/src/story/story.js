@@ -13,30 +13,76 @@ const bh = require("./sprites/block-happy.png");
 const bp = require("./sprites/block-pout.png");
 const nk = require("./sprites/mono.png");
 
-
 let story = [
   {
+    //TODO Cambiar los fondos y personajes
     bg: soviet2,
     bgm: take,
     sprite: nk,
-    speaker: b,
-    text: "In this demo, we'll go over through the majority of the features that this application offers."
+    speaker: "L",
+    //TODO Textos no terminados, faltan detalles
+    text: "Oye tú, debemos viajar hacia el año 1962 del planeta Tierra, a un periodo en que los habitantes de esta " +
+          "realidad estuvieron a punto de perecer debido a una lucha de poderes ocurrida entre los dos más " +
+          "grandes imperios que dominaban el mundo..."
   },
   {
-    text: "You can see how it's applied in the repository's \"story\" folder, so follow along if you'd like."
+    text: "en ese entonces: Estados Unidos y la Unión de Repúblicas Socialistas Soviéticas. Nuestro objetivo será " +
+          "encontrar “EL TELÉFONO ROJO”, un objeto que utilizan los poderosos humanos para comunicarse y que guarda " +
+          "un tremendo potencial (poder falico)..."
   },
   {
-    text: "Before we split into the specific features, let's go through the fundamentals."
+    text: "debido a que su origen en este plano se dio solo gracias a que las personas indicadas tomaron las decisiones " +
+          "correctas. Gracias a nuestros poderes (inserte magia) adoptaremos la forma de los asesores más influyentes " +
+          "de algún importante consejo..."
   },
   {
-    text:
-      "When writing a visual novel with this application, you can just focus on two files: `story.js` and `choices.js`."
+    text: "de expertos y tu labor será propiciar que los hechos ocurran tal y como se dieron en esta realidad. Cualquier " +
+          "alteración en las decisiones que tomen los gobernantes provocará probablemente que este planeta se aniquile " +
+          "a si mismo, pero..."
   },
   {
-    text:
-      "However, if you plan to write something without any choices like a linear visual novel, then you don't need to worry about `choices.js`."
+    text: "aún más importante, ¡NO PODREMOS OBTENER EL TELÉFONO ROJO! Que es la verdadera razón del porque estamos aquí. " +
+          "Si bien yo elegí el cuando, tu puedes inclinarte por el dónde."
   },
-  { text: "The writing will take place in `story.js`." },
+  { 
+    choicesExist: true,
+    receiveJump:"features",
+    text: "¿Quieres que vayamos a Estados Unidos? ¿o prefieres que viajemos a la Unión Soviética?",
+  },
+
+  //USA
+  {
+    //TODO Transiciones/efectos
+    routeBegins: "usaPath",
+    speaker: "Alguien",
+    text: "16 de octubre de 1962 a las 11:50. Oficina Oval del Presidente, Washington D.C.:"
+  },
+  {
+    //TODO Transiciones/efectos
+    speaker: "Oficial Genial",
+    text: "Señor presidente. Un avión de reconocimiento ha traído preocupantes noticias desde Cuba.",
+  },
+  {
+    text: "Fotografías aéreas han descubierto misiles nucleares soviéticos de alcance intermedio " + 
+          "capaces de alcanzar Washington D.C. en solo 13 minutos.",
+  },
+  {
+    //TODO Transiciones/efectos
+    speaker: "JFK",
+    text: "Nikita Khruschev ha faltado al acuerdo que tenía con nosotros respecto a la instalación " +
+          "de ojivas nucleares en Cuba y ha cruzado un límite que puede traer consecuencias catastróficas.",
+  },
+  {
+    text: "",
+  },
+  {
+    text: "",
+  },
+  {
+    text: "AAAAA",
+    jumpTo: "features"
+  },
+
   { text: "Let's begin with the sprite properties." },
   { text: "At max, we can only have three sprites on the screen." },
   { text: "You can set just one position like I'm doing right now." },
@@ -63,6 +109,7 @@ let story = [
   },
   { text: "Anyway, let's diverge to some specific features." },
   { choicesExist: true, receiveJump: "features" },
+
   // Effects
   { routeBegins: "showEffects", sprite: bh, text: "There are some preset effects at the moment." },
   { speaker: "", spriteEffect: "bounce", text: 'spriteEffect: "bounce"' },
@@ -125,6 +172,7 @@ let story = [
     text: "Just write the class in the effects.css file and set the effect value to that in a string.",
     jumpTo: "features"
   },
+
   // Transitions
   {
     routeBegins: "showTransitions",

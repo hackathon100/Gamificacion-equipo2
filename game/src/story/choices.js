@@ -2,6 +2,16 @@ var choices = [
   {
     choices: [
       {
+        routeBegins: "usaPath",
+        content: "USA",
+        resetStore: "true"
+      },
+      {
+        routeBegins: "urrsPath",
+        content: "URRS",
+        resetStore: "true"
+      },
+      /*{
         routeBegins: "showEffects",
         content: "Effects",
         nextIndex: 0
@@ -20,7 +30,7 @@ var choices = [
       {
         routeBegins: "leave",
         content: "Leave"
-      }
+      }*/
     ]
   },
   {
