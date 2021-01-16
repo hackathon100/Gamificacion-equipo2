@@ -5,6 +5,7 @@ const entrance = require("./bg/entrance.jpeg");
 const soviet2 = require("./bg/soviet2.jpg");
 // bgm
 const take = require("./bgm/take.mp3");
+const anthem = require("./bgm/soviet-march.mp3");
 // speakers
 const b = "Block";
 // sprites
@@ -21,7 +22,7 @@ let story = [
   {
     //TODO Cambiar los fondos y personajes
     bg: soviet2,
-    bgm: take,
+    bgm: anthem,
     sprite: nk,
     speaker: "",
     //TODO Textos no terminados, faltan detalles
