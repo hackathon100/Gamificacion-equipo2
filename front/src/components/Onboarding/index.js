@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 import _ from 'lodash';
 import PropTypes from 'prop-types';
+import Dialog from '@material-ui/core/Dialog';
+import { onboardingIsEnded } from 'features/selectors';
+import { endOnboarding } from 'features/Common';
 import { ReactComponent as MagicWorldSVG } from 'assets/images/magic-world.svg';
 import { ReactComponent as Wizard1SVG } from 'assets/images/wizard-1.svg';
 import { ReactComponent as Wizard2SVG } from 'assets/images/wizard-2.svg';
@@ -17,26 +21,42 @@ const images = [
   <Wizard2SVG height={300} />,
   <Wizard2SVG height={300} />,
   <Wizard2SVG height={300} />,
+  <Wizard2SVG height={300} />,
   <GlobalWarmingSVG height={300} />,
   <Wizard1SVG height={300} />,
   <TwoWorldsSVG height={300} />,
   <Wizard3SVG height={300} />,
+  <Wizard3SVG height={300} />,
   <Wizard4SVG height={300} />,
 ];
 
-const Onboarding = (props) => {
+const OnboardingContainer = ({ onboardingEnded, endOnboarding }) => {
   const [currentStep, setCurrentStep] = useState(0);
-  const [name, setName] = useState(undefined);
+  const [name, setName] = useState();
 
   const steps = _.map(stepsData.steps, (step, index) => {
-    return <Step title={step.title} text={step.text} dialog={step.dialog} choices={step.choices} name={name} image={images[index]} index={index} onSendInput={setName} setCurrentStep={setCurrentStep} />;
+    return <Step title={step.title} text={step.text} dialog={step.dialog} choices={step.choices} name={name} image={images[index]} index={index} onSendInput={setName} setCurrentStep={setCurrentStep} lastStep={index === stepsData.steps.length - 1} onEnd={endOnboarding} />;
   });
 
   return (
-    <div className="onboarding-container">
-      {steps[currentStep]}
-    </div>
+    <Dialog open={!onboardingEnded} maxWidth={false}>
+      <div className="onboarding-container">
+        {steps[currentStep]}
+      </div>
+    </Dialog>
   );
 };
 
-export default Onboarding;
+OnboardingContainer.propTypes = {};
+
+OnboardingContainer.defaultProps = {};
+
+const mapStateToProps = (state) => ({
+  onboardingEnded: onboardingIsEnded(state),
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  endOnboarding: () => dispatch(endOnboarding()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(OnboardingContainer);

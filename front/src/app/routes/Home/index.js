@@ -2,14 +2,8 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import CircularProgress from 'components/CircularProgress';
 import Button from '@material-ui/core/Button';
-import { openDialog } from 'features/Common';
-import Onboarding from 'components/Onboarding';
 
 const Home = ({ openDialog }) => {
-  useEffect(() => {
-    openDialog(<Onboarding />);
-  }, []);
-
   const styles = {
     imgbox: {
       width: '800px',
@@ -63,7 +57,6 @@ Home.defaultProps = {};
 const mapStateToProps = (state) => ({});
 
 const mapDispatchToProps = (dispatch) => ({
-  openDialog: (content) => dispatch(openDialog(content)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

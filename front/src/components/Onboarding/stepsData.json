@@ -2,7 +2,7 @@
   "steps": [
     {
       "title": "¡Comienza tu aventura!",
-      "text": "Es el año 678 de la era Mantrax. Las temporada de clases de magia está por abrir nuevamente. Todas y todos en Zhonyas están expectantes por ver a la nueva generación de magos crecer y convertirse en los nuevos protectores.\n\nZhonyas es un planeta que jamás ha conocido el calor del verano. O al menos eso es lo que se cuenta. Aquí la gente vive contenta y tranquila, viviendo en armonía mientras usan sus habilidades mágicas para el bien de la sociedad.",
+      "text": "Es el año 678 de la era Mantrax. La temporada de clases de magia está por abrir nuevamente. Todas y todos en Zhonyas están expectantes por ver a la nueva generación de magos crecer y convertirse en los nuevos protectores.\n\nZhonyas es un planeta que jamás ha conocido el calor del verano. O al menos eso es lo que se cuenta. Aquí la gente vive contenta y tranquila, viviendo en armonía mientras usan sus habilidades mágicas para el bien de la sociedad.",
       "choices": [
         {
           "text": "Siguiente"
@@ -33,7 +33,15 @@
       ]
     },
     {
-      "dialog": "—Mal. Muy mal, {name}. Ve a sentarte. En fin, como decía, en nuestro mundo los reflejos lo son todo, pues se dice que la magia es el reflejo de nuestras almas. A través de ella podemos hacer el bien o el mal; sanar o destruir; encender o apagar. Se dice que quién domine su alma, domina la magia. Es por esto que lxs magxs se han dedicado a investigar estos curiosos objetos desde el inicio de la magia.",
+      "dialog": "—Mal. Muy mal, {name}. Ve a sentarte. En fin, como decía, en nuestro mundo los reflejos lo son todo, pues se dice que la magia es el reflejo de nuestras almas. A través de ella podemos hacer el bien o el mal; sanar o destruir; encender o apagar.",
+      "choices": [
+        {
+          "text": "Continuar"
+        }
+      ]
+    },
+    {
+      "dialog": "—Se dice que quién domine su alma, domina la magia. Es por esto que lxs magxs se han dedicado a investigar estos curiosos objetos desde que se tiene conciencia.",
       "choices": [
         {
           "text": "Continuar"
@@ -83,7 +91,15 @@
       ]
     },
     {
-      "dialog": "—Así es, {name}. Pero percibo algo especial en la generación de magos a la que perteneces. Sus ansias de aprender superan a la de cualquier mago de nuestro tiempo. Creo que ustedes pueden hacer incluso más que revelar las visiones. Creo que pueden hacer lo que los grandes sabios de antaño pudieron hacer: expandir nuestros límites del conocimiento viajando a mundos paralelos. Si es así, podrán recolectar las RELIQUIAS MULTIVERSALES para reparar el TERMOSTATO DEL MULTIVERSO, mientras traen conocimiento y sabiduría a través de sus experiencias. Creo que ustedes son la esperanza.",
+      "dialog": "—Así es, {name}. Pero percibo algo especial en la generación de magos a la que perteneces. Sus ansias de aprender superan a la de cualquier mago de nuestro tiempo. Creo que ustedes pueden hacer incluso más que revelar las visiones. Creo que pueden hacer lo que los grandes sabios de antaño pudieron hacer: expandir nuestros límites del conocimiento viajando a mundos paralelos. Ustedes me parecen realmente geniales",
+      "choices": [
+        {
+          "text": "*se sonroja*"
+        }
+      ]
+    },
+    {
+      "dialog": "Si es así, podrán recolectar las RELIQUIAS MULTIVERSALES para reparar el TERMOSTATO DEL MULTIVERSO, mientras traen conocimiento y sabiduría a través de sus experiencias. Creo que ustedes son la esperanza.",
       "choices": [
         {
           "text": "Espera, ¿termostato del multiverso?"
@@ -100,7 +116,12 @@
     },
     {
       "title": "¿Eh? ¿Dónde estamos?",
-      "text": "¡Felicidades, {name}! ¡El hechizo fue todo un éxito! ¡Prepárate para recuperar la primera RELIQUIA MULTIVERSAL!\n\nPero antes, ponte un poco de estilo. Tenías razón, los espejos también sirven para elegir tu outfit."
+      "text": "¡Felicidades, {name}! ¡El hechizo fue todo un éxito! ¡Prepárate para recuperar la primera RELIQUIA MULTIVERSAL!\n\nPero antes, ponle un poco de magia a tu estilo. El hechizo de transformación es un hechizo básico en Zhonyas. Sin embargo, solo puedes transformarte en lo que ya conoces. Irás desbloqueando nuevos aspectos cuando completes nuevos capítulos.\n\nPor cierto, tenías razón. los espejos también sirven para elegir tu outfit.",
+      "choices": [
+        {
+          "text": "¡Entrar a mi primera aventura!"
+        }
+      ]
     }
   ]
 }

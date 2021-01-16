@@ -3,6 +3,8 @@
 const SHOW_SNACKBAR_MESSAGE = 'common/show_snackbar_message';
 const OPEN_DIALOG = 'common/open_dialog';
 const CLOSE_DIALOG = 'common/close_dialog';
+const START_ONBOARDING = 'common/start_onboarding';
+const END_ONBOARDING = 'common/end_onboarding';
 const SET_RIGHT_PANEL_CONTENT = 'common/set_right_panel_content';
 const OPEN_RIGHT_PANEL = 'common/open_right_panel';
 const CLOSE_RIGHT_PANEL = 'common/close_right_panel';
@@ -17,6 +19,8 @@ export const closeRightPanel = () => ({ type: CLOSE_RIGHT_PANEL });
 export const showSnackbarMessage = (message) => ({ type: SHOW_SNACKBAR_MESSAGE, payload: message });
 export const openDialog = (content) => ({ type: OPEN_DIALOG, payload: content });
 export const closeDialog = () => ({ type: CLOSE_DIALOG });
+export const startOnboarding = () => ({ type: START_ONBOARDING });
+export const endOnboarding = () => ({ type: END_ONBOARDING });
 
 // Init State
 const INIT_STATE = {
@@ -25,6 +29,7 @@ const INIT_STATE = {
   snackbarMessage: '',
   dialogIsOpen: false,
   dialogContent: null,
+  onboardingEnded: false,
 };
 
 // ----------------------------------- Reducer ---------------------------------
@@ -42,6 +47,18 @@ export default (state = INIT_STATE, action) => {
       return {
         ...state,
         rightPanelIsOpen: false,
+      };
+    }
+    case START_ONBOARDING: {
+      return {
+        ...state,
+        onboardingEnded: false,
+      };
+    }
+    case END_ONBOARDING: {
+      return {
+        ...state,
+        onboardingEnded: true,
       };
     }
     case SET_RIGHT_PANEL_CONTENT: {
