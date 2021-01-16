@@ -1,6 +1,8 @@
 // bg
 const microphone = require("./bg/microphone.jpeg");
 const entrance = require("./bg/entrance.jpeg");
+
+const soviet2 = require("./bg/soviet2.jpg");
 // bgm
 const take = require("./bgm/take.mp3");
 // speakers
@@ -9,12 +11,14 @@ const b = "Block";
 const bn = require("./sprites/block-neutral.png");
 const bh = require("./sprites/block-happy.png");
 const bp = require("./sprites/block-pout.png");
+const nk = require("./sprites/mono.png");
+
 
 let story = [
   {
-    bg: microphone,
+    bg: soviet2,
     bgm: take,
-    sprite: bn,
+    sprite: nk,
     speaker: b,
     text: "In this demo, we'll go over through the majority of the features that this application offers."
   },
