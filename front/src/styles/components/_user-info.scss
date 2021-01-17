@@ -1,20 +1,28 @@
 .user-info-container {
   color: $white;
   width: 100%;
-  padding: 0px 16px;
+  padding: 38px 16px;
+  background: rgb(21,205,203);
+  background: radial-gradient(circle, rgba(124,176,175,1) 0%, rgba(5,103,124,0.8295693277310925) 36%);
+  border-top: double 8px $gray-dark;
+  border-bottom: double 8px $gray-dark;
+
+  .subtitle {
+    color: $gray-light;
+  }
 
   .title-placeholder {
     border-radius: 40px;
     height: 20px;
     width: 100%;
-    background-color: $gray-dark;
+    background-color: $secondary;
     margin-bottom: 8px;
   }
 
   .subtitle-placeholder {
     border-radius: 40px;
     height: 16px;
-    background-color: $gray-dark;
+    background-color: $secondary;
     margin-bottom: 8px;
     width: 70%;
   }

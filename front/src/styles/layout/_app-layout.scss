@@ -7,11 +7,11 @@
 }
 
 #app-site {
-  background: linear-gradient(45deg, rgba(25, 25, 28, 0.88) 0%, rgba(25, 25, 28, 1) 100%);
+  background: url('../../assets/images/cold-bg.jpg') no-repeat center center fixed;
+  background-size: 140%;
 }
 
 .app-main {
-  background: url('../../assets/images/bg-pattern.svg') no-repeat center center fixed;
   background-color: transparent;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -19,48 +19,9 @@
   background-size: cover;
 }
 
-.app-decoration {
-  position: absolute;
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  .snow-bottom {
-    position: absolute;
-    bottom: 0px;
-    left: 5%;
-    height: 60px;
-  }
-  .snow-right-bottom {
-    position: absolute;
-    bottom: -56px;
-    right: -4px;
-    height: 200px;
-  }
-  .snow-corner-l {
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    height: 60px;
-  }
-  .snow-corner-r {
-    position: absolute;
-    top: -20px;
-    right: -6px;
-    height: 120px;
-  }
-  .snow-top {
-    position: absolute;
-    top: -5px;
-    right: 50%;
-    height: 60px;
-  }
-}
-
 .app-sidebar {
   @include display-flex(flex, column, nowrap);
+  box-shadow: $elevation-shadow-6dp;
   width: $side-nav-width;
   min-width: $side-nav-width;
   max-width: $side-nav-width;

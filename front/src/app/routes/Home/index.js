@@ -6,21 +6,38 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Cap1 from 'assets/images/cap-1.png';
+
+const TabPanel = ({ children, value, index }) => {
+  return (
+    <div
+      className="mb-2"
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+    >
+      {value === index && (
+        <div>
+          {children}
+        </div>
+      )}
+    </div>
+  );
+}
 
 const Home = ({ openDialog }) => {
-  const styles = {
-    imgbox: {
-      width: '800px',
-      height: '400px',
-    },
-    infobox: {
-      width: '400px',
-    },
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
   };
 
   return (
-    <div className="home-view-container container-fluid p-0">
-      <h1 className="mb-2 font-size-48">Historia</h1>
+    <div className="mission-view-container container-fluid p-0">
+      <h1 className="mb-2 font-size-48">Historia, Geografía y Ciencias Sociales</h1>
       <Accordion defaultExpanded square={false}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -33,22 +50,43 @@ const Home = ({ openDialog }) => {
           <div className="d-flex flex-row">
             <div className="mr-5">
               <img
-                src="https://lourdescardenal.files.wordpress.com/2017/01/senda7.png?w=600"
-                alt="historia1.png"
-                style={styles.imgbox}
+                className="cap-1"
+                src={Cap1}
+                alt="cap-1"
               />
             </div>
-            <div className="flex-column" style={styles.infobox}>
+            <div className="w-50 flex-column">
               <p>
-                ¿Qué es el bien y el mal? Descubre los misterios del ser
-                debatiendo con Aristóteles y otros notables personajes en
-                tu primera misión. Suerte!
-                ¿Qué es el bien y el mal? Descubre los misterios del ser
-                debatiendo con Aristóteles y otros notables personajes en
-                tu primera misión. Suerte!
+                Hechicer@, debemos viajar al año 1962 del planeta Tierra, a un periodo conocido como LA GUERRA FRÍA. Debemos encontrar “EL TELÉFONO ROJO”, un artefacto que alberga grandes cantidades de magia multiversal.
               </p>
-              <Button color="primary" variant="outlined" style={styles.infobox}>
-                JUEGA YA
+              <p>
+                ¿Quieres ser un influyente asesor del EXCOM del presidente Kennedy en los Estados Unidos de Norteamérica? ¿o prefieres desempeñarte como un importante camarada del Presidium del Secretario General Kruschev en la Unión de Repúblicas Socialistas Soviéticas? Tú decides que papel desempeñaremos.
+              </p>
+              <Tabs color="primary" className="mb-3" value={value} onChange={handleChange} aria-label="simple tabs example">
+                <Tab label="Objetivo de aprendizaje" />
+                <Tab label="Contenidos clave" />
+                <Tab label="Indicadores de Evaluación:" />
+              </Tabs>
+              <TabPanel value={value} index={0}>
+                <p>
+                  Analizar la Guerra Fría como la confrontación ideológica de dos proyectos antagónicos que, bajo la amenaza del enfrentamiento nuclear, se manifestó en distintos escenarios locales, y dar ejemplos de cómo afectó diversas esferas, como la política, la cultura, el deporte y las ciencias.
+                </p>
+              </TabPanel>
+              <TabPanel value={value} index={1}>
+                #Guerra Fría #Mundo Bipolar #EE.UU #URSS #Destrucción Mutua Asegurada #diplomacia
+              </TabPanel>
+              <TabPanel value={value} index={2}>
+                <ul>
+                  <li>
+                    Ejemplifican ámbitos en los que se refleja el enfrentamiento entre ambos bloques/ potencias.
+                  </li>
+                  <li>
+                    Analizan la motivación de ambas superpotencias por la superioridad en el ámbito científico, y los efectos en distintos planos, demostrando valoración por el aporte de las ciencias sociales a la comprensión de la realidad humana y su complejidad.
+                  </li>
+                </ul>
+              </TabPanel>
+              <Button color="primary" variant="contained" className="w-100">
+                ¡JUEGA YA!
               </Button>
             </div>
           </div>
@@ -61,6 +99,15 @@ const Home = ({ openDialog }) => {
           id="panel1a-header"
           >
           <span>Unidad 2 - Chile en el contexto de la Guerra Fría: transformaciones estructurales, polarización política y social y quiebre de la democracia</span>
+        </AccordionSummary>
+      </Accordion>
+      <Accordion disabled square={false}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+          >
+          <span>Unidad 3 - Dictadura militar, transición política y consenso en torno a la democracia en el Chile actual</span>
         </AccordionSummary>
       </Accordion>
     </div>

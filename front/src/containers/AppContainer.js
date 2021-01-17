@@ -25,11 +25,6 @@ import RightPanelContainer from 'containers/RightPanelContainer';
 import SnackbarContainer from 'containers/SnackbarContainer';
 import DialogContainer from 'containers/DialogContainer';
 import Onboarding from 'components/Onboarding';
-import SnowCornerL from 'assets/images/snow-corner-l.png';
-import SnowCornerR from 'assets/images/snow-corner-r.png'
-import SnowBottom from 'assets/images/snow-bottom.png';
-import SnowRightBottom from 'assets/images/snow-right-bottom.png';
-import SnowTop from 'assets/images/snow-top.png';
 
 const RestrictedRoute = ({ component: Component, token, ...rest }) => (
   <Route
@@ -76,7 +71,7 @@ const AppContainer = ({
   const regex = /\/reset-password-confirm.*|\/signin.*|\/reset-password.*/;
   if (location.pathname === '/') {
     if (initURL === '' || initURL === '/' || regex.test(initURL)) {
-      return <Redirect to="/app/home" />;
+      return <Redirect to="/app/misiones" />;
     }
     return <Redirect to={initURL} />;
   }
@@ -90,13 +85,6 @@ const AppContainer = ({
         <IntlProvider locale={currentAppLocale.locale} messages={currentAppLocale.messages}>
           {!isFetchingUser ? (
             <div className="app-main">
-              <div className="app-decoration">
-                <img className="snow-corner-l" src={SnowCornerL} alt="snow-corner-l" />
-                <img className="snow-corner-r" src={SnowCornerR} alt="snow-corner-r" />
-                <img className="snow-top" src={SnowTop} alt="snow-top" />
-                <img className="snow-bottom" src={SnowBottom} alt="snow-bottom" />
-                <img className="snow-right-bottom" src={SnowRightBottom} alt="snow-right-bottom" />
-              </div>
               {token ? <SideNavContainer /> : null}
               <div className="app-content">
                 {token && location.pathname !== '/signin' ? (

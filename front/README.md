@@ -61,3 +61,6 @@ Aquí se ubican los archivos .scss de estilo. Esta carpeta se divide en tres sub
 <a href='https://www.freepik.es/vectores/animal'>Vector de Animal creado por pch.vector - www.freepik.es</a>
 <a href='https://www.freepik.es/fotos/vintage'>Foto de Vintage creado por kbza - www.freepik.es</a>
 <a href='https://www.freepik.es/vectores/nieve'>Vector de Nieve creado por macrovector - www.freepik.es</a>
+Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+<a href='https://www.freepik.es/vectores/nieve'>Vector de Nieve creado por vectorpocket - www.freepik.es</a>

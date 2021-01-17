@@ -32,8 +32,8 @@ const images = [
 ];
 
 const OnboardingContainer = ({ onboardingEnded, endOnboarding, loadUser }) => {
-  const [currentStep, setCurrentStep] = useState(0);
-  const [name, setName] = useState(undefined);
+  const [currentStep, setCurrentStep] = useState(11);
+  const [name, setName] = useState('Bastián');
   const [avatar, setAvatar] = useState(undefined);
 
   const handleEnd = () => {

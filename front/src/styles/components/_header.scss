@@ -2,8 +2,9 @@
   padding: 24px 36px;
   height: 150px;
   width: 100%;
+  box-shadow: $elevation-shadow-3dp;
   position: relative;
-  background: url('../../assets/images/stone-bg.png') repeat center center;
+  background: rgba(0, 0, 0, 0.5);
   background-size: contain;
 
   .header-title {

@@ -5,14 +5,14 @@ const grayDarkest = '#19191c';
 // const primaryDarkest = '#1a264a';
 // const primaryDarker = '#26396f';
 const primaryDark = '#334c94';
-const primary = '#405fb9';
+const primary = '#f45905';
 const primaryLight = '#667fc7';
 // const primaryLighter = '#8c9fd5';
 // const primaryLightest = '#eceff8';
 // const secondaryDarkest = '#16454d';
 // const secondaryDarker = '#226873';
 const secondaryDark = '#2d8a9a';
-const secondary = '#38adc0';
+const secondary = '#f45905';
 const secondaryLight = '#60bdcd';
 // const secondaryLighter = '#88ced9';
 // const secondaryLightest = '#afdee6';
@@ -41,6 +41,22 @@ export default {
       root: {
         backgroundColor: grayDarkest,
         position: 'relative',
+      },
+    },
+    MuiAccordionSummary: {
+      content: {
+        fontSize: '18px',
+        fontWeight: 'bold',
+      },
+    },
+    MuiAccordion: {
+      root: {
+        fontSize: '18px',
+        backgroundColor: 'rgba(15, 48, 87, 0.6)',
+        '&.Mui-disabled': {
+          color: 'black',
+          backgroundColor: 'rgba(15, 48, 87, 0.6)',
+        },
       },
     },
     MuiMenu: {

@@ -25,9 +25,9 @@ const UserInfo = ({ user, userSignOut }) => {
   return (
     <div className="user-info-container">
       <div className="user-info-header mb-5">
-        {user.name ? <h4>{user.name}</h4> : <div className="title-placeholder" />}
+        {user.name ? <h2>{user.name}</h2> : <div className="title-placeholder" />}
         {user.level && user.grade ? (
-          <span className="subtitle">{`Nivel ${user.level} - ${user.grade}`}</span>
+          <span className="subtitle font-size-18">{`Nivel ${user.level} - ${user.grade}`}</span>
         ) : (
           <div className="subtitle-placeholder" />
         )}
