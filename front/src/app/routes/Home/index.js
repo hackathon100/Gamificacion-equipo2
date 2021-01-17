@@ -42,7 +42,7 @@ const Home = ({ openDialog }) => {
             tu primera misión. Suerte!
           </p>
           <Button color="primary" variant="outlined" style={styles.infobox}>
-            JUEGA YA MALDICION!
+            JUEGA YA
           </Button>
         </div>
       </div>
