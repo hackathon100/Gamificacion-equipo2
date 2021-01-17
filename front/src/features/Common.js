@@ -29,7 +29,7 @@ const INIT_STATE = {
   snackbarMessage: '',
   dialogIsOpen: false,
   dialogContent: null,
-  onboardingEnded: true,
+  onboardingEnded: false,
 };
 
 // ----------------------------------- Reducer ---------------------------------
