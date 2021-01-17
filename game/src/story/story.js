@@ -30,8 +30,8 @@ const protName = "Prota";
 let story = [
   {
     //TODO Cambiar los fondos y personajes
-    bg: soviet2,
     receiveJump: "start",
+    bg: soviet2,
     bgm: anthem,
     sprite: nk,
     speaker: "",
@@ -599,7 +599,7 @@ let story = [
   },
   {
     speaker: GRALS,
-    text: "el Bloqueo a Cuba es claramente un acto de guerra. No podemos retroceder ahora que ya estamos adentro, " + 
+    text: "El Bloqueo a Cuba es claramente un acto de guerra. No podemos retroceder ahora que ya estamos adentro, " + 
           "camarada Secretario General.",
   },
   {
@@ -673,12 +673,11 @@ let story = [
     speaker: KGB,
     text: "Camarada Secretario General, tenemos un mensaje desde Cuba: el camarada Castro manifiesta la convicción " + 
           "de que los estadounidenses invadirán hoy en cualquier momento lo que desatará inevitablemente una " + 
-          "guerra nuclear,",
+          "guerra nuclear, por lo que le recomendó",
   },
   {
-    text: "por lo que le recomendó al Presidium a través del camarada embajador que en caso de que ocurra una " + 
-          "nueva invasión norteamericana a la isla, la Unión Soviética debería lanzar un primer ataque directo " + 
-          "en respuesta.",
+    text: "al Presidium a través del camarada embajador que en caso de que ocurra una nueva invasión " + 
+          "norteamericana a la isla, la Unión Soviética debería lanzar un primer ataque directo en respuesta.",
   },
   {
     text: "Declara que Cuba sería destruida pero que la revolución se salvaría.",
@@ -762,24 +761,27 @@ let story = [
     speaker: KRU,
     text: "Camarada " + protName + " encargate que este mensaje llegue a la Radio Moscú lo antes posible, la policía " + 
           "de Moscú se encargará de detener todo el tránsito de la ciudad si es necesario. Aún corremos el riesgo de " + 
-          "que la guerra estalle incluso en el trayecto de este mensaje. Mientras tanto yo escribiré a Castro, no " + 
-          "le gustará la noticia.",
+          "que la guerra estalle incluso en el trayecto de este mensaje.",
+  },
+  {
+    text: "Mientras tanto yo escribiré a Castro, no le gustará la noticia.",
   },
   {
     speaker: "",
     text: "El EXCOM recibe el mensaje y celebra. El mundo respira. De aquí en adelante se estableció una línea " + 
-          "directa de comunicación entre Washington y Moscú que no tuviera demoras: TENEMOS EL TELÉFONO ROJO. Un paso " + 
-          "más adelante para que podamos salvar nuestra realidad.",
+          "directa de comunicación entre Washington y Moscú que no tuviera demoras...",
+  },
+  {
+    text: "TENEMOS EL TELÉFONO ROJO. Un paso más adelante para que podamos salvar nuestra realidad.",
   },
   {
     text: "En 1968 EE.UU y la URSS firmaron el Tratado de No Proliferación Nuclear que limita la posesión de " + 
           "armas nucleares. La mayor parte de EXCOM nunca se enteró del intercambio de misiles secreto. Quedaron " + 
-          "creyendo que la ",
+          "creyendo que la diplomacia de hierro",
   },
   {
-    text: "diplomacia de hierro respaldada por su poderío militar fue lo que les dio la victoria en esta crisis, " + 
-          "y que si esto funcionó con un gran imperio como la Unión Soviética, como no va a servir contra un pequeño" + 
-          "país… como Vietnam.",
+    text: "respaldada por su poderío militar fue lo que les dio la victoria en esta crisis, y que si esto funcionó " + 
+          "con un gran imperio como la Unión Soviética, como no va a servir contra un pequeño país… como Vietnam.",
   },
   {
     text: "Pero esa es otra historia.En 1964 Kruschev fue sacado de su cargo debido a sus “malas decisiones” " + 
