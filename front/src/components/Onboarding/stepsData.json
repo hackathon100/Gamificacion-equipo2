@@ -49,7 +49,7 @@
       ]
     },
     {
-      "dialog": "—Se dice que lxs hechicer@s más hábiles de la historia eran capaces de ver más allá de lo evidente a través de estos curiosos objetos. Hoy en día no existe nadie con tal habilidad, ¡Pero seguimos estudiando el reflejo de nuestras almas para que generaciones como la de ustedes dominen su poder y sigan trayendo paz a este maravilloso mundo!",
+      "dialog": "—Se dice que l@s hechicer@s más hábiles de la historia eran capaces de ver más allá de lo evidente a través de estos curiosos objetos. Hoy en día no existe nadie con tal habilidad, ¡Pero seguimos estudiando el reflejo de nuestras almas para que generaciones como la de ustedes dominen su poder y sigan trayendo paz a este maravilloso mundo!",
       "choices": [
         {
           "text": "Yo solo veo mi hermoso rostro."
@@ -75,7 +75,7 @@
     },
     {
       "text": "Al terminar la clase, te acercas al profesor para preguntarle sobre este fenómeno. Virgilio, como se hace llamar el sabio, reaccionó con sorpresa. Luego de un incómodo silencio, se atrevió a contestar:",
-      "dialog": "—{name}, escúchame. Aquell@s que pueden manejar la MAGIA MULTIVERSAL son lxs únicxs capaces revelar las verdades que esconden los espejos.  Aún se desconoce la razón, pero estas personas tienen algo en común: el deseo infinito de aprender. Lo sé porque yo soy como tú, y porque mi maestro lo fue también, HECHICERXS MULTIVERSALES.",
+      "dialog": "—{name}, escúchame. Aquell@s que pueden manejar la MAGIA MULTIVERSAL son l@s únicxs capaces revelar las verdades que esconden los espejos.  Aún se desconoce la razón, pero estas personas tienen algo en común: el deseo infinito de aprender. Lo sé porque yo soy como tú, y porque mi maestro lo fue también, HECHICERXS MULTIVERSALES.",
       "choices": [
         {
           "text": "Continuar"
