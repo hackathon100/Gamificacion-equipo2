@@ -3,29 +3,30 @@ var choices = [
     choices: [
       {
         routeBegins: "usaPath",
-        content: "USA",
+        content: "Estados Unidos (EE.UU.)",
         resetStore: "true"
       },
       {
-        routeBegins: "urrsPath",
-        content: "URRS",
-        resetStore: "true"
+        routeBegins: "urssPath",
+        content: "Union Sovietica (URSS)",
+        resetStore: "true",
+        nextIndex: 6
       },
     ]
   },
 
-  //USA PATH
+  //CHOICES USA PATH
   {
     choices: [
       //TODO store, de ser necesario
       {
         //store: "blockAffection",
         routeBegins: "decided-nervous",
-        content: "Estaba meditando en silencio las opciones que tenemos señor Presidente."
+        content: "(Decidid@) Estaba meditando en silencio las opciones que tenemos señor Presidente."
       },
       {
         routeBegins: "decided-nervous",
-        content: "Emm… si, disculpe señor Presidente, la situación me tiene perplej@"
+        content: "(Nervios@) Emm… si, disculpe señor Presidente, la situación me tiene perplej@"
       }
     ]
   },
@@ -36,7 +37,7 @@ var choices = [
         //store: "blockAffection",
         routeBegins: "attack",
         content: "Creo que el General tiene razón, debemos responder militarmente lo antes posible",
-        //nextIndex: 0
+        nextIndex: 2
       },
       {
         routeBegins: "planification",
@@ -52,12 +53,12 @@ var choices = [
         //store: "blockAffection",
         routeBegins: "bomb",
         content: "Bombardeemos Cuba y rematemos con una invasión terrestre tal como aconseja el General.",
-        //nextIndex: 0
+        nextIndex: 3
       },
       {
         routeBegins: "doNothing",
         content: "Mantengamos la correlación de fuerzas como plantea el Secretario de Estado, no hagamos nada.",
-        //nextIndex: 0
+        nextIndex: 3
       },
       {
         routeBegins: "economic",
@@ -79,7 +80,7 @@ var choices = [
       {
         routeBegins: "war",
         content: "El General tiene razón, nuestra debilidad podría ser peor a la larga.",
-        //nextIndex: 0
+        nextIndex: 4
       }
     ]
   },
@@ -91,22 +92,123 @@ var choices = [
         routeBegins: "noInvade",
         content: "Aceptemos públicamente todos las peticiones del acuerdo: no invadir Cuba y retirar los misiles de " + 
                  "Turquía a cambio del retiro de los misiles cubanos.",
-        //nextIndex: 0
+        nextIndex: 5
       },
       {
         routeBegins: "agreement",
         content: "Encontremos un acuerdo intermedio en el que podamos conservar la paz y a nuestros aliados de la OTAN.",
-        //nextIndex: 0
+        nextIndex: 0
       },
       {
         routeBegins: "invade",
         content: "La caída del U-2 es el primer ataque, debemos responder invadiendo Cuba.",
-        //nextIndex: 0
+        nextIndex: 5
       }
     ]
   },
 
-  //CHOICES URRS PATH
+  //CHOICES URSS PATH
+  {
+    choices: [
+      //TODO store, de ser necesario
+      {
+        //Seguro
+        //store: "blockAffection",
+        routeBegins: "decided-nervURSS",
+        content: "En efecto camarada Secretario General, tendríamos que hacerlo secretamente."
+      },
+      {
+        //Dudoso
+        routeBegins: "decided-nervURSS",
+        content: "Es una posición privilegiada, pero el compañero Castro puede interpretar esto como una señal de imperialismo."
+      },
+    ]
+  },
+  {
+    choices: [
+      //TODO store, de ser necesario
+      {
+        //store: "blockAffection",
+        routeBegins: "publicPact",
+        content: "Hagamos público el pacto de no agresión para prevenir la invasión como señala el Camarada General.",
+        nextIndex: 7
+      },
+      {
+        routeBegins: "misileDelivery",
+        content: "Entreguemos los misiles a Castro y nuestros oficiales que vele personalmente por la seguridad de su territorio como aconseja el Camarada Agente.",
+        nextIndex: 7
+      },
+      {
+        routeBegins: "waitReaction",
+        content: "Lo más prudente es esperar la reacción estadounidense como señala el Camarada Ministro."
+      },
+    ]
+  },
+  {
+    choices: [
+      //TODO store, de ser necesario
+      {
+        //store: "blockAffection",
+        routeBegins: "retire",
+        content: "La prudencia es imprescindible en este momento, retiremos a nuestros compañeros por ahora."
+      },
+      {
+        routeBegins: "freighters",
+        content: "El bloqueo es un acto de guerra claro, los cargueros deben llegar a la isla a toda costa.",
+        nextIndex: 8
+      },
+    ]
+  },
+  {
+    choices: [
+      //TODO store, de ser necesario
+      {
+        //store: "blockAffection",
+        routeBegins: "negotiate",
+        content: "Concuerdo con su estrategia camarada Secretario General, negociemos el retiro a cambio de impedir la invasión de Cuba."
+      },
+      {
+        routeBegins: "missilesToCuba",
+        content: "No podemos ceder ante los americanos, los misiles deben quedarse en Cuba.",
+        nextIndex: 9
+      },
+    ]
+  },
+  {
+    choices: [
+      //TODO store, de ser necesario
+      {
+        //store: "blockAffection",
+        routeBegins: "decided-nervURSS2",
+        content: "Enseguida camarada Secretario General."
+      },
+      {
+        routeBegins: "decided-nervURSS2",
+        content: "A su orden camarada Secretario General ¿hay alguna novedad?"
+      },
+    ]
+  },
+  {
+    choices: [
+      //TODO store, de ser necesario
+      {
+        //store: "blockAffection",
+        routeBegins: "waitInvasion",
+        content: "Esperemos la invasión de Cuba y respondamos en consecuencia convocando al Pacto de Varsovia y movilizando las piezas en Europa.",
+        nextIndex: 11
+      },
+      {
+        routeBegins: "firstAttack",
+        content: "El que pega primero pega dos veces: hagamos el primer ataque como aconsejo Castro.",
+        nextIndex: 11
+      },
+      {
+        routeBegins: "wait",
+        content: "No perdamos la paciencia, esperemos una señal diplomática estadounidense.",
+        nextIndex: 0
+      },
+    ]
+  },
 ];
 
 export default choices;
