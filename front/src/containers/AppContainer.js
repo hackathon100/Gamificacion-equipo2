@@ -24,6 +24,7 @@ import Header from 'components/Header';
 import RightPanelContainer from 'containers/RightPanelContainer';
 import SnackbarContainer from 'containers/SnackbarContainer';
 import DialogContainer from 'containers/DialogContainer';
+import Onboarding from 'components/Onboarding';
 
 const RestrictedRoute = ({ component: Component, token, ...rest }) => (
   <Route
@@ -101,6 +102,7 @@ const AppContainer = ({
                   </Switch>
                   <SnackbarContainer />
                   <DialogContainer />
+                  <Onboarding />
                 </div>
               </div>
               <RightPanelContainer />

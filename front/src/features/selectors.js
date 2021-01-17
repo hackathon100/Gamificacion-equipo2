@@ -5,6 +5,7 @@ export const getSnackbarMessage = (state) => state.common.snackbarMessage;
 export const getRightPanelContent = (state) => state.common.rightPanelContent;
 export const rightPanelIsOpen = (state) => state.common.rightPanelIsOpen;
 export const dialogIsOpen = (state) => state.common.dialogIsOpen;
+export const onboardingIsEnded = (state) => state.common.onboardingEnded;
 export const getDialogContent = (state) => state.common.dialogContent;
 
 // Settings

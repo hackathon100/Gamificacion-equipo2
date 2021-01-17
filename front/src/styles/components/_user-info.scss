@@ -1,11 +1,21 @@
 .user-info-container {
-  .user-name {
-    color: $white;
-    font-size: 14px;
-    font-weight: bold;
+  color: $white;
+  width: 100%;
+  padding: 0px 16px;
+
+  .title-placeholder {
+    border-radius: 40px;
+    height: 20px;
+    width: 100%;
+    background-color: $gray-dark;
+    margin-bottom: 8px;
   }
-  .user-email {
-    font-size: 12px;
-    color: $inactive-color;
+
+  .subtitle-placeholder {
+    border-radius: 40px;
+    height: 16px;
+    background-color: $gray-dark;
+    margin-bottom: 8px;
+    width: 70%;
   }
 }

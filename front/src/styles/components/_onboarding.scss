@@ -1,9 +1,18 @@
 .onboarding-container {
   padding: 32px;
   .onboarding-step-container {
-    .step-text {
+    .step-text,
+    .step-dialog,
+    .step-choices {
       text-align: justify;
-      max-width: 400px;
+      max-width: 500px;
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -o-pre-wrap;
+    }
+
+    .step-text {
+      font-size: 18px;
     }
 
     .step-image {

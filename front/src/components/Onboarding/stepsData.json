@@ -1,6 +1,127 @@
 {
-  "step1": {
-    "title": "¡Comienza tu aventura!",
-    "text": "Es el año 678 de la era Mantrax. Vives tranquilamente en la ciudad de Krong, una pequeña aldea situada entre montañas y ríos, dentro del mundo de Zhonyas. Zhonyas es un planeta que ."
-  }
+  "steps": [
+    {
+      "title": "¡Comienza tu aventura!",
+      "text": "Es el año 678 de la era Mantrax. La temporada de clases de magia está por abrir nuevamente. Todas y todos en Zhonyas están expectantes por ver a la nueva generación de magos crecer y convertirse en los nuevos protectores.\n\nZhonyas es un planeta que jamás ha conocido el calor del verano. O al menos eso es lo que se cuenta. Aquí la gente vive contenta y tranquila, viviendo en armonía mientras usan sus habilidades mágicas para el bien de la sociedad.",
+      "choices": [
+        {
+          "text": "Siguiente"
+        }
+      ]
+    },
+    {
+      "text": "Hoy es tu primer día de clases. La campana resuena en la Escuela de Magia de Krong. Como es habitual, eres el último en entrar a la sala. El profesor te mira con cara de desaprobación y te pregunta:\n\n",
+      "dialog": "—¿Cuál es su nombre, joven?",
+      "choices": [
+        {
+          "input": "Mi nombre es..."
+        }
+      ]
+    },
+    {
+      "dialog": "—Así que eres {name}... Bien {name}, ¿podrías decirle al resto de la clase qué importancia tienen los espejos en la magia?",
+      "choices": [
+        {
+          "text": "Nos permiten elegir nuestro outfit de mago."
+        },
+        {
+          "text": "¿Espejos? Ah sí, espejos. La verdad es que no sé para que los necesitamos."
+        },
+        {
+          "text": "Eh..."
+        }
+      ]
+    },
+    {
+      "dialog": "—Mal. Muy mal, {name}. Ve a sentarte. En fin, como decía, en nuestro mundo los reflejos lo son todo, pues se dice que la magia es el reflejo de nuestras almas. A través de ella podemos hacer el bien o el mal; sanar o destruir; encender o apagar.",
+      "choices": [
+        {
+          "text": "Continuar"
+        }
+      ]
+    },
+    {
+      "dialog": "—Se dice que quién domine su alma, domina la magia. Es por esto que lxs magxs se han dedicado a investigar estos curiosos objetos desde que se tiene conciencia.",
+      "choices": [
+        {
+          "text": "Continuar"
+        }
+      ]
+    },
+    {
+      "dialog": "—También se dice que lxs magxs más hábiles de la historia también eran capaces de ver más allá de lo evidente a través de estos curiosos objetos. Hoy en día no existe nadie con tal habilidad, ¡Pero seguimos estudiando el reflejo de nuestras almas para que generaciones como la de ustedes dominen la magia y sigan trayendo paz a este maravilloso mundo!",
+      "choices": [
+        {
+          "text": "Yo solo veo mi hermoso rostro."
+        },
+        {
+          "text": "Creo que mi espejo se rompió..."
+        },
+        {
+          "text": "Creo que yo veo algo en el mío... ¿será una mancha?"
+        }
+      ]
+    },
+    {
+      "text": "Sigues mirando tu espejo detenidamente. De pronto, una extraña imagen se refleja ante ti. Un paisaje radiante, con tanta luz que debes mirarla de reojo para percibirla mejor.\n\nHay algo que te incomoda. La gente, vestida con atuendos muy extravagantes, se ve cansada y asfixiada. Los animales buscan refugio en la sombra de los árboles. El lugar parece estar ardiendo en calor.",
+      "choices": [
+        {
+          "text": "¿Qué es esto? Pareciera que están dentro de una gran hoguera, pero eso no es posible en este mundo de hielo."
+        },
+        {
+          "text": "Debo estar alucinando."
+        }
+      ]
+    },
+    {
+      "text": "Al terminar la clase, te acercas al profesor para preguntarle sobre este fenómeno. Merlín, como se hace llamar el sabio, reaccionó con sorpresa. Luego de un incómodo silencio, se atrevió a contestar:",
+      "dialog": "—{name}, escúchame. La verdad es que aún hay quienes pueden revelar las verdades que esconden los espejos. Aún se desconoce la razón, pero estas personas tienen algo en común: el deseo infinito de aprender. Lo sé porque yo soy como tú, y porque mi maestro lo fue también.",
+      "choices": [
+        {
+          "text": "Continuar"
+        }
+      ]
+    },
+    {
+      "dialog": "—Solo hace unos pocos años, y luego de largas investigaciones, logramos descubrir el origen de las visiones: se trata de un mundo paralelo, en el cual la temperatura de ha ido aumentando hasta niveles que amenazan la continuidad de la vida humana. Coincidentemente, así como en su mundo la temperatura aumenta, en el nuestro ha ido disminuyendo con el paso de los años. ¿Entiendes a lo que me refiero?",
+      "choices": [
+        {
+          "text": "Nuestro mundo corre peligro también..."
+        }
+      ]
+    },
+    {
+      "dialog": "—Así es, {name}. Pero percibo algo especial en la generación de magos a la que perteneces. Sus ansias de aprender superan a la de cualquier mago de nuestro tiempo. Creo que ustedes pueden hacer incluso más que revelar las visiones. Creo que pueden hacer lo que los grandes sabios de antaño pudieron hacer: expandir nuestros límites del conocimiento viajando a mundos paralelos. Ustedes me parecen realmente geniales",
+      "choices": [
+        {
+          "text": "*se sonroja*"
+        }
+      ]
+    },
+    {
+      "dialog": "Si es así, podrán recolectar las RELIQUIAS MULTIVERSALES para reparar el TERMOSTATO DEL MULTIVERSO, mientras traen conocimiento y sabiduría a través de sus experiencias. Creo que ustedes son la esperanza.",
+      "choices": [
+        {
+          "text": "Espera, ¿termostato del multiverso?"
+        }
+      ]
+    },
+    {
+      "dialog": "—Es lo que dije, el TERMOSTATO DEL MULTIVERSO. Se encarga de regular la temperatura de todos los universos existentes en un radio específico. El que regula estos dos mundos se rompió, y hay que repararlo con elementos históricos de ambos mundos. Ahora bien, hagamos una prueba. Comprobemos si realmente tienes la habilidad para realizar el hechizo SALTO UNIVERSAL.\n\nAhora repite conmigo: ¡UNIVERSUS ALMA!",
+      "choices": [
+        {
+          "text": "¡UNIVERSUS ALMA!"
+        }
+      ]
+    },
+    {
+      "title": "¿Eh? ¿Dónde estamos?",
+      "text": "¡Felicidades, {name}! ¡El hechizo fue todo un éxito! ¡Prepárate para recuperar la primera RELIQUIA MULTIVERSAL!\n\nPero antes, ponle un poco de magia a tu estilo. El hechizo de transformación es un hechizo básico en Zhonyas. Sin embargo, solo puedes transformarte en lo que ya conoces. Irás desbloqueando nuevos aspectos cuando completes nuevos capítulos.\n\nPor cierto, tenías razón. los espejos también sirven para elegir tu outfit.",
+      "choices": [
+        {
+          "text": "¡Entrar a mi primera aventura!"
+        }
+      ]
+    }
+  ]
 }
