@@ -14,6 +14,9 @@ const jfk_death = require("./bg/jfk.png");
 const tv = require("./bg/tv.png");
 const top_secret = require("./bg/top-secret.png");
 const black = require("./bg/black.png");
+const map = require("./bg/map1.png");
+const nuclear = require("./bg/nuclear.png");
+
 
 // bgm
 const take = require("./bgm/take.mp3");
@@ -46,6 +49,7 @@ const red_phone = require("./sprites/phone.png");
 // sounds
 const click = require("./sounds/answer-ok.mp3");
 const goal = require("./sounds/goal.mp3");
+const boom = require("./sounds/boom.mp3");
 
 //Nombres USA PATH
 const JFK = "John F. Kennedy";
@@ -571,15 +575,20 @@ let story = [
   //TODO USA: MALAS RESPUESTAS -> JUMPTO
   {
     routeBegins: "attack",
+    bgm: "",
     speaker: "",
+    bg: map,
+    soundEffect: boom,
     text: "Al atacar a Cuba directamente, un contrataque nuclear desde la propia isla vino enseguida. La URSS " + 
           "aprovechó nuestra debilidad e invadió Berlín, por lo que tuvimos que responder con un ataque nuclear " + 
           "equivalente.",
   },
   {
+    bg: nuclear,
     text: "Hacerle caso al General condujo a un holocausto nuclear de Destrucción Mutua Asegurada. " + 
           "Así nunca conseguiremos el “TELÉFONO ROJO”, inténtalo otra vez.",
     jumpTo: "usaCheck1",
+
   },
   {
     routeBegins: "bomb",
@@ -587,15 +596,23 @@ let story = [
     text: "Al atacar a Cuba directamente, un contrataque nuclear desde la propia isla vino enseguida. La URSS " + 
           "aprovechó nuestra debilidad e invadió Berlín, por lo que tuvimos que responder con un ataque nuclear " + 
           "equivalente.",
+    bg: map,
+    bgm: "",
+    soundEffect: boom,
   },
   {
     text: "Hacerle caso al General condujo a un holocausto nuclear de Destrucción Mutua Asegurada. " + 
           "Así nunca conseguiremos el “TELÉFONO ROJO”, inténtalo otra vez.",
     jumpTo: "usaCheck2",
+    bg: nuclear,
+
   },
   {
     routeBegins: "doNothing",
     speaker: "",
+    bg: map,
+    soundEffect: boom,
+    bgm: "",
     text: "Los misiles soviéticos siguieron llegando y cuando nos tocó responder fue demasiado tarde. A mediano " + 
           "o largo plazo la guerra nuclear se desató y el “TELÉFONO ROJO” no llegó ni siquiera a ser una idea. " + 
           "Intentémoslo de nuevo.",
@@ -604,16 +621,23 @@ let story = [
   {
     routeBegins: "war",
     speaker: "",
+    bg: map,
+    bgm: "",
+    soundEffect: boom,
     text: "Mantener el protocolo provoca que un submarino soviético que estaba incomunicado con Moscú se defienda " + 
           "de las cargas de profundidad disparando torpedos nucleares a los buques del bloque.",
   },
   {
     text: "La guerra nuclear ha comenzado y el TELEFONO ROJO se ha perdido nuevamente. Intentemoslo de nuevo.",
     jumpTo: "usaCheck3",
+    bg: nuclear,
   },
   {
     routeBegins: "noInvade",
     speaker: "",
+    bg: map,
+    soundEffect: boom,
+    bgm: "",
     text: "la OTAN llega a su fin y el desequilibrio en las fuerzas occidentales lleva a que eventualmente se desate " + 
           "un holocausto nuclear. Estuvimos muy cerca del TELÉFONO ROJO.",
     jumpTo: "usaCheck4",
@@ -621,6 +645,9 @@ let story = [
   {
     routeBegins: "invade",
     speaker: "",
+    bgm: "",
+    bg: map,
+    soundEffect: boom,
     text: "Al atacar a Cuba directamente, un contrataque nuclear desde la propia isla vino enseguida. La URSS " + 
           "aprovechó nuestra debilidad e invadió Berlín, por lo que tuvimos que responder con un ataque nuclear " + 
           "equivalente.",
@@ -629,6 +656,7 @@ let story = [
     text: "Hacerle caso al General condujo a un holocausto nuclear de Destrucción Mutua Asegurada. " + 
           "Así nunca conseguiremos el “TELÉFONO ROJO”, inténtalo otra vez.",
     jumpTo: "usaCheck4",
+    bg: nuclear,
   },
   //Fin USA PATH
 
