@@ -230,6 +230,7 @@ let story = [
   {
     //TODO Transiciones/efectos
     routeBegins: "economic",
+    sprite: tp,
     speaker: "",
     bg: caribe,
     text: "17 de octubre a las 12:00. Mar Caribe. 40 barcos de guerra bloquean la isla de Cuba.",
@@ -398,7 +399,7 @@ let story = [
     speaker: RK,
     sprite: rk,
     text: "Tenemos un problema Jack, toda la prensa   está reportando que la invasión de Cuba es inminente e indeclinable. Si " + 
-          "los espías y diplomáticos soviéticos lo creen, la guerra se podía desatar incluso antes de que podamos responder a " + 
+          "los espías y diplomáticos soviéticos lo creen, la guerra se podría desatar incluso antes de que podamos responder a " + 
           "este nuevo trato.",
   },
   {
@@ -481,26 +482,32 @@ let story = [
   {
     speaker: "",
     text: "28 de octubre",
-    sprite: mago,
-    bg: coldwar,
+    spriteLeft: tp,
+    sprite: tp,
+    bg: black,
   },
   //TODO Arreglar textos (lo mas probable es que haya que separarlos porque son muy largos)
   {
-    spriteLeft: red_phone,
+    sprite: red_phone,
+    spriteLeftEffect: "shake",
     text: "Kruschev y el Presidium aceptaron el trato, el EXCOM celebra y el mundo respira. De aquí en adelante se " + 
           "estableció una línea directa de comunicación entre Washington y Moscú que no tuviera demoras: haz conseguido " + 
           "EL TELÉFONO ROJO. Un paso más adelante para que podamos salvar nuestra realidad.",
   },
   {
+    sprite: tp,
+    spriteLeft: tp,
     text: "En 1968 EE.UU y la URSS firmaron el Tratado de No Proliferación Nuclear que limita la posesión de armas " + 
           "nucleares. La mayor parte de EXCOM nunca se enteró del intercambio de misiles secreto. Quedaron creyendo que " + 
           "la diplomacia de hierro respaldada por su poderío militar fue lo que les dio la victoria en esta crisis, y " + 
           "que si esto funcionó con un gran imperio como la Unión Soviética, como no va a servir contra un pequeño país… " + 
           "como Vietnam. Pero esa es otra historia.",
+    bg: coldwar,
   },
   {
     bg: jfk_death,
     sprite: tp,
+    spriteLeft: tp,
     text: "En 1963 J. F. Kennedy fue asesinado en Dallas mientras aún ejercía como presidente, convirtiéndose en el " + 
           "cuarto presidente estadounidense que muere en el ejercicio de su cargo. Su hermano Robert corrió una suerte " + 
           "similar: en 1968 fue abatido por un tirador mientras se encontraba en plena campaña presidencial en California. ",
