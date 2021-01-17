@@ -3,12 +3,12 @@ var choices = [
     choices: [
       {
         routeBegins: "usaPath",
-        content: "USA",
+        content: "Estados Unidos (EE.UU.)",
         resetStore: "true"
       },
       {
         routeBegins: "urssPath",
-        content: "urss",
+        content: "Union Sovietica (URSS)",
         resetStore: "true",
         nextIndex: 6
       },
@@ -22,7 +22,7 @@ var choices = [
       {
         //store: "blockAffection",
         routeBegins: "decided-nervous",
-        content: "(Decidid@)Estaba meditando en silencio las opciones que tenemos señor Presidente."
+        content: "(Decidid@) Estaba meditando en silencio las opciones que tenemos señor Presidente."
       },
       {
         routeBegins: "decided-nervous",
@@ -97,7 +97,7 @@ var choices = [
       {
         routeBegins: "agreement",
         content: "Encontremos un acuerdo intermedio en el que podamos conservar la paz y a nuestros aliados de la OTAN.",
-        //nextIndex: 0
+        nextIndex: 0
       },
       {
         routeBegins: "invade",
@@ -204,7 +204,8 @@ var choices = [
       },
       {
         routeBegins: "wait",
-        content: "No perdamos la paciencia, esperemos una señal diplomática estadounidense."
+        content: "No perdamos la paciencia, esperemos una señal diplomática estadounidense.",
+        nextIndex: 0
       },
     ]
   },

@@ -31,31 +31,32 @@ let story = [
   {
     //TODO Cambiar los fondos y personajes
     bg: soviet2,
+    receiveJump: "start",
     bgm: anthem,
     sprite: nk,
     speaker: "",
     //TODO Textos no terminados, faltan detalles
     text: protName + ", debemos viajar hacia el año 1962 del planeta Tierra, a un periodo en que los habitantes " +
           "de esta realidad estuvieron a punto de perecer debido a una lucha de poderes ocurrida entre los dos más " +
-          "grandes imperios que dominaban el..."
+          "grandes imperios que dominaban el mundo"
   },
   {
-    text: "Estados Unidos y la Unión de Repúblicas Socialistas Soviéticas. Nuestro objetivo será encontrar “EL " +
-          "TELÉFONO ROJO”, un artefacto que utilizan los líderes para comunicarse y que alberga grandes cantidades " +
-          "de magia multiversal..."
+    text: "en ese entonces: Estados Unidos y la Unión de Repúblicas Socialistas Soviéticas. Nuestro objetivo será " +
+          "encontrar “EL TELÉFONO ROJO”, un artefacto que utilizan los líderes para comunicarse y que alberga grandes " +
+          "cantidades de magia multiversal"
   },
   {
     text: "debido a que su origen en este plano se dio solo gracias a que las personas indicadas tomaron las decisiones " +
           "correctas. Gracias a nuestros poderes multiversales adoptaremos la forma de los asesores más influyentes " +
-          "de algún importante consejo..."
+          "de algún importante consejo"
   },
   {
     text: "de expertos y tu labor será propiciar que los hechos ocurran tal y como se dieron en esta realidad. Cualquier " +
           "alteración en las decisiones que tomen los gobernantes provocará probablemente que este planeta se aniquile " +
-          "a si mismo, pero..."
+          "a si mismo, pero aún más importante..."
   },
   {
-    text: "aún más importante, NO PODREMOS OBTENER EL TELÉFONO ROJO, que es la verdadera razón para estar aquí. " +
+    text: "NO PODREMOS OBTENER EL TELÉFONO ROJO, que es la verdadera razón para estar aquí. " +
           "Si bien yo elegí el cuando, te permitiré inclinarte por el dónde."
   },
   { 
@@ -68,6 +69,7 @@ let story = [
   {
     //TODO Transiciones/efectos, definir speaker si es necesario
     routeBegins: "usaPath",
+    receiveJump: "usaCheck1",
     speaker: "",
     text: "16 de octubre de 1962 a las 11:50. Oficina Oval del Presidente, Washington D.C."
   },
@@ -111,7 +113,6 @@ let story = [
   },
   {
     //TODO Transiciones/efectos
-    receiveJump: "",
     speaker: JFK,
     choicesExist: true,
     text: "¿Y tu que crees " + protName + "? Has estado muy silencios@",
@@ -129,6 +130,7 @@ let story = [
   {
     //TODO Transiciones/efectos
     routeBegins: "planification",
+    receiveJump: "usaCheck2",
     speaker: "",
     text: "16 de octubre a las 18:30. Oficina Oval del Presidente, Washington D.C.",
   },
@@ -151,11 +153,12 @@ let story = [
     //TODO Transiciones/efectos
     speaker: ASSE,
     text: "Si bien un ataque directo parece ser la opción más lógica, creo que a esta altura los misiles soviéticos " + 
-          "ya deben estar preparados para lanzar un contrataque a cualquier ciudad importante de los Estados Unidos, " + 
-          "además de que ante la baja de alguno de los...",
+          "ya deben estar preparados para lanzar un contrataque a cualquier ciudad importante de los Estados Unidos," + 
+          "además de que ante la baja",
   },
   {
-    text: "soldados soviéticos que está en Cuba esto sería considerado un acto de guerra por parte de la URSS.",
+    text: "de alguno de los soldados soviéticos que está en Cuba esto sería considerado un acto de guerra por " +
+          "parte de la URSS.",
   },
   {
     //TODO Transiciones/efectos
@@ -182,14 +185,18 @@ let story = [
           "propio Kruschev.",
   },
   {
-    choicesExist: true,
     text: "Los misiles comenzarían a ser enviados por todo Ásia y África. No queremos que una segunda o tercera Cuba " + 
           "surja aquí en nuestras narices, el apoyo económico de la Alianza Para el Progreso sería solo una pérdida de " + 
-          "dólares. ¿Qué deberíamos hacer " + protName + "?",
+          "dólares.",
+  },
+  {
+    choicesExist: true,
+    text: "¿Qué deberíamos hacer " + protName + "?",
   },
   {
     //TODO Transiciones/efectos
     routeBegins: "economic",
+    receiveJump: "usaCheck3",
     speaker: "",
     text: "17 de octubre a las 12:00. Mar Caribe. 40 barcos de guerra bloquean la isla de Cuba.",
   },
@@ -213,11 +220,11 @@ let story = [
     speaker: JFK,
     text: "Creo que un ataque a Cuba sería como un dominó mundial en donde la URSS procedería a tomar Berlín, " + 
           "lo que las naciones de la OTAN responderían con un ataque nuclear directo. La respuesta soviética " + 
-          "sería devolver el ataque lo que...",
+          "sería devolver el ataque lo que nos obligaría",
   },
   {
-    text: "nos obligaría a entrar en esta escalada de Destrucción Mutua Asegurada. Debemos informar al pueblo " + 
-          "estadounidense sobre lo que ocurre para que estén preparados para lo peor. Acompáñame " + protName + ".",
+    text: "a entrar en esta escalada de Destrucción Mutua Asegurada. Debemos informar al pueblo estadounidense " + 
+          "sobre lo que ocurre para que estén preparados para lo peor. Acompáñame " + protName + ".",
   },
   {
     //TODO Transiciones/efectos
@@ -268,7 +275,7 @@ let story = [
   {
     //TODO Transiciones/efectos
     speaker: "",
-    text: "23 de octubre en la noche. Embajada soviética",
+    text: "23 de octubre en la noche. Embajada soviética.",
   },
   {
     //TODO Transiciones/efectos
@@ -280,8 +287,10 @@ let story = [
     //TODO Transiciones/efectos
     speaker: AD,
     text: "Bueno, pues digamos que sí existe esa posibilidad, los barcos soviéticos no se detendrán, y más aún, está acción " + 
-          "será considerada como un acto de guerra por parte del Kremlin. Por lo que si su supuesto es cierto Robert, debería " + 
-          "ajustar los protocolos de la marina.",
+          "será considerada como un acto de guerra por parte del Kremlin.",
+  },
+  {
+    text: "Por lo que si su supuesto es cierto Robert, debería ajustar los protocolos",
   },
   {
     //TODO Transiciones/efectos
@@ -290,10 +299,10 @@ let story = [
   },
   {
     speaker: JFK,
-    text: "Bobby, " + protName + ", como les fue con el embajador.",
+    text: "Bobby, " + protName + ", ¿como les fue con el embajador?",
   },
   {
-    speaker: RK, //TODO Robert Kennedy??
+    speaker: RK,
     text: "No tenemos muy buenas noticias Jack. La detención del convoy soviético será tomado como un acto de guerra. Tenemos " + 
           "que enviar un asesor que se encargue de que la marina por nada del mundo le dispare a un navío soviético.",
   },
@@ -310,6 +319,7 @@ let story = [
   {
     //TODO Transiciones/efectos
     routeBegins: "noWar",
+    receiveJump: "usaCheck4",
     speaker: "",
     text: "26 de octubre a las 18:00. Oficina Oval del Presidente, Washington D.C.",
   },
@@ -337,8 +347,11 @@ let story = [
   {
     speaker: GRAL,
     text: "Los soviéticos están exigiendo un nuevo acuerdo a través de Radio Moscú, Kruschev quiere que los EE.UU también retire " + 
-          "los misiles de Turquía. Es inaceptable Señor, no podemos sacrificar la seguridad de un aliado a cambio de la nuestra, " + 
-          "eso sería el fin de la OTAN.",
+          "los misiles de Turquía.",
+  },
+  {
+    text: "Es inaceptable Señor, no podemos sacrificar la seguridad de un aliado a cambio de la nuestra, eso " + 
+          "sería el fin de la OTAN.",
   },
   {
     speaker: JFK,
@@ -360,10 +373,6 @@ let story = [
   },
   {
     speaker: JFK,
-    //TODO mira al protagonista
-    text: "Llegó el momento de tomar decisiones importantes. Necesito escuchar a todos mis asesores.",
-  },
-  {
     choicesExist: true,
     text: "Llegó el momento de tomar decisiones importantes. Necesito escuchar a todos mis asesores.",
   },
@@ -376,14 +385,20 @@ let story = [
   },
   {
     text: "Los colaboradores más cercanos a Kennedy encontraron una forma de aceptar el trato sin romper la OTAN. Primero " + 
-          "enviaron una carta pública aceptando el primer trato de Kruschev, NUNCA INVADIRÁN CUBA. Robert Kennedy y tu en " + 
-          "persona llevaron el acuerdo al embajador soviético, pero con un segundo mensaje “top secret”: ",
+          "enviaron una carta pública aceptando el primer trato de Kruschev, NUNCA INVADIRÁN CUBA.",
+  },
+  {
+    text: "Robert Kennedy y tu en persona llevaron el acuerdo al embajador soviético, pero con un segundo mensaje " + 
+          "top secret: ",
   },
   {
     speaker: RK,
     text: "Los oficiales quieren retribución por la caída del avión de reconocimiento, por lo que podemos aceptar públicamente " + 
           "solo el compromiso de no invasión de Cuba, pero no el retiro de los misiles en Turquía, al menos no públicamente. " + 
-          "Embajador Dobrynin, acepten este trato y la promesa de este gobierno es que los misiles de Turquía habrán sido " + 
+          "Embajador Dobrynin,",
+  },
+  {
+    text: "acepten este trato y la promesa de este gobierno es que los misiles de Turquía habrán sido " + 
           "retirados de aquí a 5 meses. Sin embargo, si esta conversación se filtra, el trato se acaba.",
   },
   {
@@ -393,30 +408,40 @@ let story = [
   },
   {
     speaker: "",
-    text: "28 de octubre",
+    text: "28 de octubre.",
   },
   //TODO Arreglar textos (lo mas probable es que haya que separarlos porque son muy largos)
   {
     text: "Kruschev y el Presidium aceptaron el trato, el EXCOM celebra y el mundo respira. De aquí en adelante se " + 
-          "estableció una línea directa de comunicación entre Washington y Moscú que no tuviera demoras: haz conseguido " + 
-          "EL TELÉFONO ROJO. Un paso más adelante para que podamos salvar nuestra realidad.",
+          "estableció una línea directa de comunicación entre Washington y Moscú que no tuviera demoras: has conseguido " + 
+          "EL TELÉFONO ROJO.",
+  },
+  {
+    text: "Un paso más adelante para que podamos salvar nuestra realidad.",
   },
   {
     text: "En 1968 EE.UU y la URSS firmaron el Tratado de No Proliferación Nuclear que limita la posesión de armas " + 
           "nucleares. La mayor parte de EXCOM nunca se enteró del intercambio de misiles secreto. Quedaron creyendo que " + 
-          "la diplomacia de hierro respaldada por su poderío militar fue lo que les dio la victoria en esta crisis, y " + 
-          "que si esto funcionó con un gran imperio como la Unión Soviética, como no va a servir contra un pequeño país… " + 
+          "la diplomacia de hierro respaldada",
+  },
+  {
+    text: "por su poderío militar fue lo que les dio la victoria en esta crisis, y que si esto " + 
+          "funcionó con un gran imperio como la Unión Soviética, como no va a servir contra un pequeño país… " + 
           "como Vietnam. Pero esa es otra historia.",
   },
   {
     text: "En 1963 J. F. Kennedy fue asesinado en Dallas mientras aún ejercía como presidente, convirtiéndose en el " + 
           "cuarto presidente estadounidense que muere en el ejercicio de su cargo. Su hermano Robert corrió una suerte " + 
-          "similar: en 1968 fue abatido por un tirador mientras se encontraba en plena campaña presidencial en California. ",
+          "similar:",
   },
   {
-    text: "Un trágico destino para estos sujetos. Lamentablemente sabes que no podemos intervenir en las lineas temporales " + 
-          "que ya han sido trazadas, solo procurar que los hilos sigan su camino para encontrar los artefactos (mágicos, " + 
-          "faéricos, viles, oscuros, abisales, bla).",
+    text: "en 1968 fue abatido por un tirador mientras se encontraba en plena campaña presidencial en California. " + 
+          "Un trágico destino para estos sujetos. ",
+  },
+  {
+    text: "Lamentablemente no podemos intervenir en las líneas temporales que ya han sido trazadas, " + 
+          "solo procurar que los hilos sigan su camino para encontrar los artefactos multiversales.",
+    jumpTo: "start",
   },
   //TODO USA: MALAS RESPUESTAS -> JUMPTO
   {
@@ -429,7 +454,7 @@ let story = [
   {
     text: "Hacerle caso al General condujo a un holocausto nuclear de Destrucción Mutua Asegurada. " + 
           "Así nunca conseguiremos el “TELÉFONO ROJO”, inténtalo otra vez.",
-    jumpTo: "",
+    jumpTo: "usaCheck1",
   },
   {
     routeBegins: "bomb",
@@ -441,15 +466,15 @@ let story = [
   {
     text: "Hacerle caso al General condujo a un holocausto nuclear de Destrucción Mutua Asegurada. " + 
           "Así nunca conseguiremos el “TELÉFONO ROJO”, inténtalo otra vez.",
-    jumpTo: "",
+    jumpTo: "usaCheck2",
   },
   {
     routeBegins: "doNothing",
     speaker: "",
     text: "Los misiles soviéticos siguieron llegando y cuando nos tocó responder fue demasiado tarde. A mediano " + 
           "o largo plazo la guerra nuclear se desató y el “TELÉFONO ROJO” no llegó ni siquiera a ser una idea. " + 
-          "Intentémoslo de nuevo",
-    jumpTo: "",
+          "Intentémoslo de nuevo.",
+    jumpTo: "usaCheck2",
   },
   {
     routeBegins: "war",
@@ -459,14 +484,14 @@ let story = [
   },
   {
     text: "La guerra nuclear ha comenzado y el TELEFONO ROJO se ha perdido nuevamente. Intentemoslo de nuevo.",
-    jumpTo: "",
+    jumpTo: "usaCheck3",
   },
   {
     routeBegins: "noInvade",
     speaker: "",
     text: "la OTAN llega a su fin y el desequilibrio en las fuerzas occidentales lleva a que eventualmente se desate " + 
           "un holocausto nuclear. Estuvimos muy cerca del TELÉFONO ROJO.",
-    jumpTo: "",
+    jumpTo: "usaCheck4",
   },
   {
     routeBegins: "invade",
@@ -478,13 +503,14 @@ let story = [
   {
     text: "Hacerle caso al General condujo a un holocausto nuclear de Destrucción Mutua Asegurada. " + 
           "Así nunca conseguiremos el “TELÉFONO ROJO”, inténtalo otra vez.",
-    jumpTo: "",
+    jumpTo: "usaCheck4",
   },
   //Fin USA PATH
 
   //INICIO URSS PATH
   {
     routeBegins: "urssPath",
+    receiveJump: "urssCheck1",
     speaker: "",
     text: "Abril de 1962. El Kremlin. Moscú."
   },
@@ -523,8 +549,11 @@ let story = [
   {
     speaker: KGB,
     text: "Camarada Secretario General, nuestros agentes en terreno reportan actividad inusual en suelo " + 
-          "estadounidense. Los congresistas se están volcando a Washington, la marina estadounidense se " + 
-          "desplegó en el Caribe, y los civiles estadounidenses están siendo evacuados de Guantanamo.",
+          "estadounidense.",
+  },
+  {
+    text: "Los congresistas se están volcando a Washington, la marina estadounidense se desplegó en el " + 
+          "Caribe, y los civiles estadounidenses están siendo evacuados de Guantanamo.",
   },
   {
     speaker: GRALS,
@@ -560,6 +589,7 @@ let story = [
   },
   {
     routeBegins: "waitReaction",
+    receiveJump: "urssCheck2",
     speaker: "",
     text: "23 de octubre a las 1:00. El Kremlin. Moscú.",
   },
@@ -585,6 +615,7 @@ let story = [
   },
   {
     routeBegins: "retire",
+    receiveJump: "urssCheck3",
     speaker: "",
     text: "24 de octubre a las 17:15. El Kremlin. Moscú. ",
   },
@@ -619,6 +650,7 @@ let story = [
   },
   {
     routeBegins: "negotiate",
+    receiveJump: "urssCheck4",
     speaker: "",
     text: "26 de octubre 10:00. El Kremlin. Moscú.",
   },
@@ -641,9 +673,15 @@ let story = [
     speaker: KGB,
     text: "Camarada Secretario General, tenemos un mensaje desde Cuba: el camarada Castro manifiesta la convicción " + 
           "de que los estadounidenses invadirán hoy en cualquier momento lo que desatará inevitablemente una " + 
-          "guerra nuclear, por lo que le recomendó al Presidium a través del camarada embajador que en caso de que " + 
-          "ocurra una nueva invasión norteamericana a la isla, la Unión Soviética debería lanzar un primer ataque " + 
-          "directo en respuesta. Declara que Cuba sería destruida pero que la revolución se salvaría.",
+          "guerra nuclear,",
+  },
+  {
+    text: "por lo que le recomendó al Presidium a través del camarada embajador que en caso de que ocurra una " + 
+          "nueva invasión norteamericana a la isla, la Unión Soviética debería lanzar un primer ataque directo " + 
+          "en respuesta.",
+  },
+  {
+    text: "Declara que Cuba sería destruida pero que la revolución se salvaría.",
   },
   {
     speaker: KRU,
@@ -736,24 +774,35 @@ let story = [
   {
     text: "En 1968 EE.UU y la URSS firmaron el Tratado de No Proliferación Nuclear que limita la posesión de " + 
           "armas nucleares. La mayor parte de EXCOM nunca se enteró del intercambio de misiles secreto. Quedaron " + 
-          "creyendo que la diplomacia de hierro respaldada por su poderío militar fue lo que les dio la victoria " + 
-          "en esta crisis, y que si esto funcionó con un gran imperio como la Unión Soviética, como no va a servir " + 
-          "contra un pequeño país… como Vietnam. Pero esa es otra historia.",
+          "creyendo que la ",
   },
   {
-    text: "En 1964 Kruschev fue sacado de su cargo debido a sus “malas decisiones” entre las que se incluía el " + 
-          "desembarco de misiles en Cuba. Terminó sus días como una sombra del hombre poderoso que fue en su momento. " + 
-          "Un amargo destino. Pero así son las distintas realidades, ya han sido trazadas, solo debemos procurar que los " + 
-          "hilos sigan su camino para encontrar los artefactos multiversales",
+    text: "diplomacia de hierro respaldada por su poderío militar fue lo que les dio la victoria en esta crisis, " + 
+          "y que si esto funcionó con un gran imperio como la Unión Soviética, como no va a servir contra un pequeño" + 
+          "país… como Vietnam.",
   },
+  {
+    text: "Pero esa es otra historia.En 1964 Kruschev fue sacado de su cargo debido a sus “malas decisiones” " + 
+          "entre las que se incluía el desembarco de misiles en Cuba. Terminó sus días como una sombra del " + 
+          "hombre poderoso que fue en su momento. ",
+  },
+  {
+    text: "Un amargo destino. Pero así son las distintas realidades, ya han sido trazadas, solo debemos procurar que los " + 
+          "hilos sigan su camino para encontrar los artefactos multiversales.",
+    jumpTo: "start",
+  },
+  //
+
   //TODO URSS: MALAS RESPUESTAS -> JUMPTO
   {
     routeBegins: "publicPact",
     speaker: "",
     text: "El destino de Cuba y la Unión Soviética quedó atado, eventualmente EE.UU invade la isla lo que desencadena " + 
-          "una respuesta en cadena de bombardeos nucleares garantizando la Destrucción Mutua. El TELÉFONO ROJO está " + 
-          "fuera de nuestro alcance, camarada " + protName + ".",
-    jumpTo: "",
+          "una respuesta en cadena de bombardeos nucleares garantizando la Destrucción Mutua.",
+    jumpTo: "urssCheck1",
+  },
+  {
+    text: "El TELÉFONO ROJO está fuera de nuestro alcance, camarada " + protName + ".",
   },
   {
     routeBegins: "misileDelivery",
@@ -761,16 +810,18 @@ let story = [
     text: "Castro o algún oficial soviético realizan ataques nucleares ante la presión americana lo que desencadena " + 
           "una respuesta en cadena de bombardeos nucleares garantizando la Destrucción Mutua. El TELÉFONO ROJO está " + 
           "fuera de nuestro alcance, camarada " + protName + ".",
-    jumpTo: "",
+    jumpTo: "urssCheck1",
   },
   {
     routeBegins: "freighters",
     speaker: "",
     text: "Los cargueros siguen su camino y son detenidos por la marina estadounidense. Un submarino soviético que " + 
-          "estaba incomunicado con Moscú se defiende de las cargas de profundidad disparando torpedos nucleares a " + 
-          "los buques del bloqueo americano. La guerra nuclear ha comenzado y el TELEFONO ROJO se ha perdido " + 
+          "estaba incomunicado con Moscú se defiende de las cargas de profundidad disparando torpedos nucleares a ",
+  },
+  {
+    text: "los buques del bloqueo americano. La guerra nuclear ha comenzado y el TELEFONO ROJO se ha perdido " + 
           "nuevamente. Intentemoslo de nuevo camarada " + protName + ".",
-    jumpTo: "",
+    jumpTo: "urssCheck2",
   },
   {
     routeBegins: "missilesToCuba",
@@ -778,27 +829,26 @@ let story = [
     text: "Castro o algún oficial soviético realizan ataques nucleares ante la presión americana lo que desencadena " + 
           "una respuesta en cadena de bombardeos nucleares garantizando la Destrucción Mutua. El TELÉFONO ROJO está " + 
           "fuera de nuestro alcance, camarada " + protName + ".",
-    jumpTo: "",
+    jumpTo: "urssCheck3",
   },
   {
     routeBegins: "waitInvasion",
     speaker: "",
     text: "Cuba es invadida y el contrataque nuclear desde la propia isla surge enseguida. El Pacto de Varsovia " + 
           "invade Berlín, y la guerra contra la OTAN está declarada. EE.UU y sus aliados responden con un ataque " + 
-          "nuclear equivalente. Resultado: holocausto nuclear de Destrucción Mutua Asegurada. Estábamos tan cerca " + 
+          "nuclear equivalente.",
+  },
+  {
+    text: "Resultado: holocausto nuclear de Destrucción Mutua Asegurada. Estábamos tan cerca " + 
           "del “TELÉFONO ROJO”, intentémoslo otra vez camarada " + protName + ".",
-    jumpTo: "",
+    jumpTo: "urssCheck4",
   },
   {
     routeBegins: "firstAttack",
     speaker: "",
     text: "La Destrucción Mutua Asegurada ocurre en cosa de minutos. Tan cerca que estuvimos del “TELÉFONO ROJO”. " + 
           "Vamos de nuevo camarada " + protName + ".",
-    jumpTo: "",
-  },
-  {
-    speaker: "",
-    text: "",
+    jumpTo: "urssCheck4",
   },
   //FIN URSS PATH
 ];
