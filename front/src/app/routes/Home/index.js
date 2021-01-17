@@ -9,6 +9,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Cap1 from 'assets/images/cap-1.png';
+import Link from '@material-ui/core/Link'
 
 const TabPanel = ({ children, value, index }) => {
   return (
@@ -85,9 +86,11 @@ const Home = ({ openDialog }) => {
                   </li>
                 </ul>
               </TabPanel>
-              <Button color="primary" variant="contained" className="w-100">
-                ¡JUEGA YA!
-              </Button>
+              <a target="_blank" href="http://localhost:3006/">
+                <Button color="primary" variant="contained" className="w-100">
+                  ¡JUEGA YA!
+                </Button>
+              </a>
             </div>
           </div>
         </AccordionDetails>

@@ -184,9 +184,9 @@
   }
 
   a:not(.app-logo) {
-    border-top: 3px double $secondary-darker;
+    border-top: 3px double $secondary-lighter;
     &:last-child {
-      border-bottom: 3px double $secondary-darker;
+      border-bottom: 3px double $secondary-lighter;
     }
   }
 

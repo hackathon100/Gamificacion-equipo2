@@ -4,7 +4,7 @@ import 'styles/app.scss';
 const grayDarkest = '#19191c';
 // const primaryDarkest = '#1a264a';
 // const primaryDarker = '#26396f';
-const primaryDark = '#334c94';
+const primaryDark = '#ab3e04';
 const primary = '#f45905';
 const primaryLight = '#667fc7';
 // const primaryLighter = '#8c9fd5';
