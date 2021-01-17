@@ -2,7 +2,7 @@
   "steps": [
     {
       "title": "¡Comienza tu aventura!",
-      "text": "Es el año 678 de la era Mantrax. La temporada de clases de magia está por abrir nuevamente. Todas y todos en Zhonyas están expectantes por ver a la nueva generación de magos crecer y convertirse en los nuevos protectores.\n\nZhonyas es un planeta que jamás ha conocido el calor del verano. O al menos eso es lo que se cuenta. Aquí la gente vive contenta y tranquila, viviendo en armonía mientras usan sus habilidades mágicas para el bien de la sociedad.",
+      "text": "Es el año 678 de la era Mantrax. La temporada de hechicería está por comenzar nuevamente. Todas y todos en Zhonyas están expectantes por ver a la nueva generación de aprendices crecer y convertirse en los nuevos protectores.\n\nZhonyas es un planeta que jamás ha conocido el calor del verano. O al menos eso es lo que se cuenta. En la pequeña aldea de Krong, la gente vive contenta y tranquila, en armonía con la naturaleza y sus criaturas, mientras utilizan sus habilidades mágicas para el bien de la comunidad.",
       "choices": [
         {
           "text": "Siguiente"
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "text": "Hoy es tu primer día de clases. La campana resuena en la Escuela de Magia de Krong. Como es habitual, eres el último en entrar a la sala. El profesor te mira con cara de desaprobación y te pregunta:\n\n",
+      "text": "Hoy es tu primer día de clases. La campana resuena en la Escuela de Hechiceria de Krong. Como es habitual, eres el último en entrar a la sala. El profesor te mira con cara de desaprobación y te pregunta:\n\n",
       "dialog": "—¿Cuál es su nombre, joven?",
       "choices": [
         {
@@ -19,10 +19,10 @@
       ]
     },
     {
-      "dialog": "—Así que eres {name}... Bien {name}, ¿podrías decirle al resto de la clase qué importancia tienen los espejos en la magia?",
+      "dialog": "—Así que eres {name}... Bien {name}, ¿podrías decirle al resto de la clase qué importancia tienen los espejos para la hechicería?",
       "choices": [
         {
-          "text": "Nos permiten elegir nuestro outfit de mago."
+          "text": "Nos permiten elegir nuestro outfit de hechicero."
         },
         {
           "text": "¿Espejos? Ah sí, espejos. La verdad es que no sé para que los necesitamos."
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "dialog": "—Se dice que quién domine su alma, domina la magia. Es por esto que lxs magxs se han dedicado a investigar estos curiosos objetos desde que se tiene conciencia.",
+      "dialog": "—Se dice que quién domine su alma, domina la magia. Es por esto que en esta escuela nos dedicamos a investigar el poder de los espejos desde que se tiene conciencia.",
       "choices": [
         {
           "text": "Continuar"
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "dialog": "—También se dice que lxs magxs más hábiles de la historia también eran capaces de ver más allá de lo evidente a través de estos curiosos objetos. Hoy en día no existe nadie con tal habilidad, ¡Pero seguimos estudiando el reflejo de nuestras almas para que generaciones como la de ustedes dominen la magia y sigan trayendo paz a este maravilloso mundo!",
+      "dialog": "—Se dice que lxs hechicerxs más hábiles de la historia eran capaces de ver más allá de lo evidente a través de estos curiosos objetos. Hoy en día no existe nadie con tal habilidad, ¡Pero seguimos estudiando el reflejo de nuestras almas para que generaciones como la de ustedes dominen su poder y sigan trayendo paz a este maravilloso mundo!",
       "choices": [
         {
           "text": "Yo solo veo mi hermoso rostro."
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "text": "Sigues mirando tu espejo detenidamente. De pronto, una extraña imagen se refleja ante ti. Un paisaje radiante, con tanta luz que debes mirarla de reojo para percibirla mejor.\n\nHay algo que te incomoda. La gente, vestida con atuendos muy extravagantes, se ve cansada y asfixiada. Los animales buscan refugio en la sombra de los árboles. El lugar parece estar ardiendo en calor.",
+      "text": "Sigues mirando tu espejo detenidamente. De pronto, una extraña imagen se refleja ante ti. Un paisaje esteril, con tanta luz que debes mirarla de reojo para percibirla mejor.\n\nHay algo que te incomoda. La gente, vestida con atuendos muy extravagantes, se ve cansada y asfixiada. Los animales buscan refugio en la sombra de los árboles. El lugar parece estar ardiendo en calor.",
       "choices": [
         {
           "text": "¿Qué es esto? Pareciera que están dentro de una gran hoguera, pero eso no es posible en este mundo de hielo."
@@ -74,8 +74,8 @@
       ]
     },
     {
-      "text": "Al terminar la clase, te acercas al profesor para preguntarle sobre este fenómeno. Merlín, como se hace llamar el sabio, reaccionó con sorpresa. Luego de un incómodo silencio, se atrevió a contestar:",
-      "dialog": "—{name}, escúchame. La verdad es que aún hay quienes pueden revelar las verdades que esconden los espejos. Aún se desconoce la razón, pero estas personas tienen algo en común: el deseo infinito de aprender. Lo sé porque yo soy como tú, y porque mi maestro lo fue también.",
+      "text": "Al terminar la clase, te acercas al profesor para preguntarle sobre este fenómeno. Virgilio, como se hace llamar el sabio, reaccionó con sorpresa. Luego de un incómodo silencio, se atrevió a contestar:",
+      "dialog": "—{name}, escúchame. Aquellxs que pueden manejar la MAGIA MULTIVERSAL son lxs únicxs capaces revelar las verdades que esconden los espejos.  Aún se desconoce la razón, pero estas personas tienen algo en común: el deseo infinito de aprender. Lo sé porque yo soy como tú, y porque mi maestro lo fue también, HECHICERXS MULTIVERSALES.",
       "choices": [
         {
           "text": "Continuar"
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "dialog": "—Solo hace unos pocos años, y luego de largas investigaciones, logramos descubrir el origen de las visiones: se trata de un mundo paralelo, en el cual la temperatura de ha ido aumentando hasta niveles que amenazan la continuidad de la vida humana. Coincidentemente, así como en su mundo la temperatura aumenta, en el nuestro ha ido disminuyendo con el paso de los años. ¿Entiendes a lo que me refiero?",
+      "dialog": "—Solo hace unos pocos años, y luego de largas investigaciones, logramos descubrir el origen de las visiones: se trata de un mundo paralelo, en el cual la temperatura ha ido aumentando hasta niveles que amenazan la continuidad de la vida. Coincidentemente, así como en su mundo la temperatura aumenta, en el nuestro ha ido disminuyendo con el paso de los años. ¿Entiendes a lo que me refiero?",
       "choices": [
         {
           "text": "Nuestro mundo corre peligro también..."
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "dialog": "—Así es, {name}. Pero percibo algo especial en la generación de magos a la que perteneces. Sus ansias de aprender superan a la de cualquier mago de nuestro tiempo. Creo que ustedes pueden hacer incluso más que revelar las visiones. Creo que pueden hacer lo que los grandes sabios de antaño pudieron hacer: expandir nuestros límites del conocimiento viajando a mundos paralelos. Ustedes me parecen realmente geniales",
+      "dialog": "—Así es, {name}. Pero percibo algo especial en la generación de hechicerxs a la que perteneces. Sus ansias de aprender superan a la de cualquiera de nuestro tiempo. Confío en que ustedes pueden hacer incluso más que revelar las visiones. Serán capaces de alcanzar el potencial de los grandes sabios de antaño y expandir nuestros límites del conocimiento viajando a mundos paralelos. Ustedes me parecen realmente geniales",
       "choices": [
         {
           "text": "*se sonroja*"
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "dialog": "—Es lo que dije, el TERMOSTATO DEL MULTIVERSO. Se encarga de regular la temperatura de todos los universos existentes en un radio específico. El que regula estos dos mundos se rompió, y hay que repararlo con elementos históricos de ambos mundos. Ahora bien, hagamos una prueba. Comprobemos si realmente tienes la habilidad para realizar el hechizo SALTO UNIVERSAL.\n\nAhora repite conmigo: ¡UNIVERSUS ALMA!",
+      "dialog": "—Es lo que dije, el TERMOSTATO DEL MULTIVERSO. Se encarga de regular la temperatura de todos los universos existentes en un radio específico. El que regula estos dos mundos se rompió, y hay que repararlo con poderosos artefactos históricos de ambos mundos. Ahora bien, hagamos una prueba. Comprobemos si realmente tienes la habilidad para realizar el hechizo SALTO UNIVERSAL.\n\nAhora repite conmigo: ¡UNIVERSUS ALMA!",
       "choices": [
         {
           "text": "¡UNIVERSUS ALMA!"
