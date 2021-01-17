@@ -19,6 +19,8 @@ const black = require("./bg/black.png");
 // bgm
 const take = require("./bgm/take.mp3");
 const anthem = require("./bgm/soviet-march.mp3");
+const intro = require("./bgm/intro.mp3");
+const usa_war = require("./bgm/usa-war.mp3");
 
 // speakers
 const b = "Block";
@@ -42,6 +44,10 @@ const ad = require("./sprites/ambassor.png");
 const mago = require("./sprites/mago.png");
 const red_phone = require("./sprites/phone.png");
 
+// sounds
+const click = require("./sounds/answer-ok.mp3");
+const goal = require("./sounds/goal.mp3");
+
 //Names
 const JFK = "John F. Kennedy"
 const RK = "Robert Kennedy"
@@ -51,7 +57,7 @@ let story = [
   {
     //TODO Cambiar los fondos y personajes
     bg: coldwar,
-    bgm: anthem,
+    bgm: intro,
     sprite: mago,
     speaker: "",
     //TODO Textos no terminados, faltan detalles
@@ -88,6 +94,8 @@ let story = [
   {
     //TODO Transiciones/efectos, definir speaker si es necesario
     routeBegins: "usaPath",
+    bgm: usa_war,
+    soundEffect: click,
     bg: whitehouse,
     speaker: "",
     sprite: tp ,
@@ -147,6 +155,7 @@ let story = [
   },
   {
     routeBegins: "decided-nervous",
+    soundEffect: click,
     speaker: JFK,
     text: "Y bien, eres mi más valios@ asesor@ ¿Qué crees que deberíamos hacer?"
   },
@@ -159,6 +168,7 @@ let story = [
     //TODO Transiciones/efectos
     routeBegins: "planification",
     speaker: "",
+    soundEffect: click,
     sprite: tp,
     bg: whitehouse,
     text: "16 de octubre a las 18:30. Oficina Oval del Presidente, Washington D.C.",
@@ -230,6 +240,7 @@ let story = [
   {
     //TODO Transiciones/efectos
     routeBegins: "economic",
+    soundEffect: click,
     sprite: tp,
     speaker: "",
     bg: caribe,
@@ -379,6 +390,7 @@ let story = [
     routeBegins: "noWar",
     speaker: "",
     bg: whitehouse,
+    soundEffect: click,
     sprite: tp,
     text: "26 de octubre a las 18:00. Oficina Oval del Presidente, Washington D.C.",
   },
@@ -456,6 +468,7 @@ let story = [
     routeBegins: "agreement",
     speaker: "",
     bg: whitehouse,
+    soundEffect: click,
     sprite: tp,
     text: "27 de octubre a las 19:30. Oficina Oval del Presidente, Washington D.C.",
   },
@@ -489,9 +502,10 @@ let story = [
   //TODO Arreglar textos (lo mas probable es que haya que separarlos porque son muy largos)
   {
     sprite: red_phone,
-    spriteLeftEffect: "shake",
-    text: "Kruschev y el Presidium aceptaron el trato, el EXCOM celebra y el mundo respira. De aquí en adelante se " +
-          "estableció una línea directa de comunicación entre Washington y Moscú que no tuviera demoras: haz conseguido " +
+    soundEffect: goal,
+    spriteEffect: "shake",
+    text: "Kruschev y el Presidium aceptaron el trato, el EXCOM celebra y el mundo respira. De aquí en adelante se " + 
+          "estableció una línea directa de comunicación entre Washington y Moscú que no tuviera demoras: haz conseguido " + 
           "EL TELÉFONO ROJO. Un paso más adelante para que podamos salvar nuestra realidad.",
   },
   {
@@ -521,6 +535,7 @@ let story = [
   //TODO USA MALAS RESPUESTAS
   //Fin USA PATH
   //TODO URRS PATH
+  //bgm: intro,
 ];
 
 // The code below is to set undefined properties to the last defined property.
