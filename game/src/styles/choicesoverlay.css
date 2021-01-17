@@ -7,6 +7,7 @@
 
 .overlay .choice-button {
   font-size: 26px;
+  white-space: normal;
   width: 750px;
   margin: 30px auto;
   border-radius: 25px;
@@ -31,6 +32,3 @@
   background-color: white;
   color: #1d75a5;
 }
-
-
-
