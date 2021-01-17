@@ -9,6 +9,7 @@
 
   .header-title {
     font-weight: bold;
+    text-shadow: 0 0 6px brown;
   }
 
   .header-desc {
@@ -16,6 +17,7 @@
     white-space: -moz-pre-wrap;
     white-space: -o-pre-wrap;
     color: $subtitle-color;
+    text-shadow: 0 0 6px brown;
   }
 
   svg {
