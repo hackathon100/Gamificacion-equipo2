@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Avatar from '@material-ui/core/Avatar';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import { BiExit } from 'react-icons/bi';
 import IntlMessages from 'util/IntlMessages';
 import { userSignOut } from 'features/Auth';
-import { ReactComponent as Pj1SVG } from 'assets/images/pj-1.svg';
+import { getAuthUser } from 'features/selectors';
+import Avatar from 'components/Avatar';
 
-const UserInfo = ({ userSignOut }) => {
+const UserInfo = ({ user, userSignOut }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [open, setOpen] = useState(false);
   const [firstName] = useState(localStorage.getItem('first_name'));
@@ -27,13 +24,15 @@ const UserInfo = ({ userSignOut }) => {
 
   return (
     <div className="user-info-container">
-      <div className="user-info-header">
-        <h3>Bastián</h3>
-        <h4>Nivel 1 - Aprendíz</h4>
+      <div className="user-info-header mb-5">
+        {user.name ? <h4>{user.name}</h4> : <div className="title-placeholder" />}
+        {user.level && user.grade ? (
+          <span className="subtitle">{`Nivel ${user.level} - ${user.grade}`}</span>
+        ) : (
+          <div className="subtitle-placeholder" />
+        )}
       </div>
-      <div>
-        <Pj1SVG />
-      </div>
+      <Avatar id={user.avatar} height={140} />
     </div>
   );
 };
@@ -42,6 +41,8 @@ UserInfo.propTypes = {
   userSignOut: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state) => ({});
+const mapStateToProps = (state) => ({
+  user: getAuthUser(state),
+});
 
 export default connect(mapStateToProps, { userSignOut })(UserInfo);

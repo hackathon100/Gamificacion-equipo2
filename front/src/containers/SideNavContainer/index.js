@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
-import { ReactComponent as ShapesSVG } from 'assets/images/sidebar-shapes.svg';
 import UserInfo from 'components/UserInfo';
 import { updateWindowWidth } from 'features/Settings';
 import { userSignOut } from 'features/Auth';
@@ -28,11 +27,10 @@ const SideNavContainer = ({ userSignOut, updateWindowWidth }) => {
             /> */}
           </Link>
         </div>
-        <SidenavContent />
-        <div className="logout">
-          <UserInfo />
+        <UserInfo />
+        <div className="mt-4">
+          <SidenavContent />
         </div>
-        <ShapesSVG />
       </div>
     </div>
   );

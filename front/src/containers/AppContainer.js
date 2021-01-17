@@ -12,7 +12,6 @@ import http from 'config/Api';
 import asyncComponent from 'util/asyncComponent';
 import { getAccessToken } from 'util/localStorage';
 import { fetchUser, userLandsTo } from 'features/Auth';
-import { startOnboarding } from 'features/Common';
 import { getAuthUser, getInitUrl, getToken, isFetchingUser } from 'features/selectors';
 import AppLocale from 'util/lngProvider';
 import CircularProgress from 'components/CircularProgress';
@@ -54,7 +53,6 @@ const AppContainer = ({
   match,
   location,
   isFetchingUser,
-  startOnboarding,
 }) => {
   const token = 1234; // TODO remove
 
@@ -69,10 +67,6 @@ const AppContainer = ({
       // fetchUser(); TODO: add
     }
   }, [fetchUser, token]);
-
-  useEffect(() => {
-    startOnboarding();
-  }, [startOnboarding]);
 
   const regex = /\/reset-password-confirm.*|\/signin.*|\/reset-password.*/;
   if (location.pathname === '/') {
@@ -139,7 +133,6 @@ AppContainer.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string,
   }).isRequired,
-  startOnboarding: PropTypes.func.isRequired,
 };
 
 AppContainer.defaultProps = {
@@ -156,5 +149,4 @@ const mapStateToProps = (state) => ({
 export default connect(mapStateToProps, {
   userLandsTo,
   fetchUser,
-  startOnboarding,
 })(AppContainer);

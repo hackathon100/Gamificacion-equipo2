@@ -5,13 +5,13 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import SelectAvatar from 'components/SelectAvatar';
 
-const Step = ({ title, text, dialog, choices, image, name, index, lastStep, setCurrentStep, onSendInput, onEnd }) => {
+const Step = ({ title, text, dialog, choices, image, name, index, lastStep, setCurrentStep, onSendInput, onAvatarChange, onEnd }) => {
   const [inputValue, setInputValue] = useState(name);
   return (
     <div className="onboarding-step-container d-flex align-items-center">
       {lastStep ? (
         <div className="mr-4">
-          <SelectAvatar name={name} />
+          <SelectAvatar name={name} onAvatarChange={onAvatarChange} />
         </div>
       ) : null}
       <div className="d-flex flex-column">
