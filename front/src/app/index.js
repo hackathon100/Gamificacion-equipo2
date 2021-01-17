@@ -15,7 +15,7 @@ const App = ({ match }) => {
 
   return (
     <Switch>
-      <Route path={`${match.url}/home`} component={asyncComponent(() => import('./routes/Home'))} />
+      <Route path={`${match.url}/misiones`} component={asyncComponent(() => import('./routes/Home'))} />
       <Route component={asyncComponent(() => import('components/Error404'))} />
     </Switch>
   );

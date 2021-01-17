@@ -8,9 +8,9 @@ const SidenavContent = ({ history }) => {
   return (
     <ul className="nav-menu">
       <li className="menu no-arrow">
-        <NavLink className="d-flex align-items-center nav-text" to="/app/home">
+        <NavLink className="d-flex align-items-center nav-text" to="/app/misiones">
           <BsFillHouseDoorFill className="mr-3" />
-          <IntlMessages id="pages.home" />
+          <IntlMessages id="pages.misiones" />
         </NavLink>
       </li>
     </ul>

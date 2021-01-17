@@ -7,14 +7,14 @@ import { BiBell, BiSearch } from 'react-icons/bi';
 const Header = ({ history }) => {
   const subPath = history.location.pathname.replace('/app/', '').replace('/', '.');
   return (
-    <div className="header-container d-flex justify-content-between">
-      <div className="d-flex flex-column">
+    <div className="header-container d-flex justify-content-start">
+      <div className="d-flex flex-column align-items-start justify-content-center">
         <h1 className="header-title">
           <IntlMessages id={`pages.${subPath}`} />
         </h1>
-        <h6 className="header-desc">
+        <span className="header-desc">
           <IntlMessages id={`pages.${subPath}.description`} />
-        </h6>
+        </span>
       </div>
       <div className="d-flex align-items-start">
         <div className="d-flex align-items-center">

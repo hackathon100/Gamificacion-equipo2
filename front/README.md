@@ -59,3 +59,5 @@ Aquí se ubican los archivos .scss de estilo. Esta carpeta se divide en tres sub
 <a href='https://www.freepik.es/vectores/libro'>Vector de Libro creado por pch.vector - www.freepik.es</a>
 <a href='https://www.freepik.es/vectores/arbol'>Vector de Árbol creado por brgfx - www.freepik.es</a>
 <a href='https://www.freepik.es/vectores/animal'>Vector de Animal creado por pch.vector - www.freepik.es</a>
+<a href='https://www.freepik.es/fotos/vintage'>Foto de Vintage creado por kbza - www.freepik.es</a>
+<a href='https://www.freepik.es/vectores/nieve'>Vector de Nieve creado por macrovector - www.freepik.es</a>
