@@ -4,6 +4,7 @@ const entrance = require("./bg/entrance.jpeg");
 const oval = require("./bg/oval.png");
 const coldwar = require("./bg/coldwar.png");
 const soviet2 = require("./bg/soviet2.jpg");
+const kremlin = require("./bg/kremlin.jpg");
 const whitehouse = require("./bg/white-house.png");
 const excom = require("./bg/meet.png");
 const caribe = require("./bg/ships.png");
@@ -35,11 +36,13 @@ const nk = require("./sprites/mono.png");
 const tp = require("./sprites/transparente.png");
 const fc = require("./sprites/fidel.png");
 const jfkSprt = require("./sprites/kennedy1.png");
+const sm = require("./sprites/defensa.png");
+
 //const jfk2 = require("./sprites/kennedy2.png");
 const kgb = require("./sprites/kgb-putin.png");
 const mp = require("./sprites/mike-pence.png");
 const rk = require("./sprites/robert-k.png");
-const sm = require("./sprites/soviet-militar1.png");
+const mdd = require("./sprites/soviet-militar1.png");
 const usa = require("./sprites/us-asesora.png");
 const usm = require("./sprites/us-militar.png");
 const ad = require("./sprites/ambassor.png");
@@ -665,22 +668,28 @@ let story = [
   {
     routeBegins: "urssPath",
     receiveJump: "urssCheck1",
+    bg: kremlin,
+    bgm: anthem,
     speaker: "",
     text: "Abril de 1962. El Kremlin. Moscú."
   },
   {
     speaker: KGB,
+    bg: soviet2,
+    sprite: kgb,
     text: "Camarada Secretario General, nuestros espías informan de la instalación de misiles nucleares americanos " + 
           "en territorio turco. El imperialismo americano está a las puertas de la patria.",
   },
   {
     speaker: GRALS,
+    sprite: sm,
     text: "Nuestros científicos están trabajando en el alcance de nuestra cohetería, aunque la posibilidad de crear " + 
           "un misil intercontinental aún se ve lejana. Tenemos que buscar locaciones en naciones hermanas en la " + 
           "revolución, Camarada Secretario General.",
   },
   {
     speaker: KRU,
+    sprite: nk,
     text: "Cuba es la opción más lógica por lo visto. Su ubicación geográfica es ideal, y significaría una amenaza " + 
           "real y equivalente a Washington. ¿Que opina camarada " + protName + "?",
   },
@@ -691,6 +700,7 @@ let story = [
   },
   {
     routeBegins: "decided-nervURSS",
+    soundEffect: goal,
     speaker: KRU,
     text: "Cierto es camarada, pero su cercanía geográfica con el Imperio es razón suficiente para movernos " + 
           "cautelosamente. No queremos que esta vez una nueva invasión como Bahía de Cochinos termine con los " + 
@@ -698,10 +708,14 @@ let story = [
   },
   {
     speaker: "",
+    bg: kremlin,
+    sprite: "",
     text: "22 de octubre a las 22:00. El Kremlin. Moscú.",
   },
   {
     speaker: KGB,
+    bg: soviet2,
+    sprite: kgb,
     text: "Camarada Secretario General, nuestros agentes en terreno reportan actividad inusual en suelo " + 
           "estadounidense.",
   },
@@ -711,28 +725,33 @@ let story = [
   },
   {
     speaker: GRALS,
+    sprite: sm,
     text: "Kennedy dará una conferencia a las 2:00 A.M hora de Moscú y la embajada de EE.UU nos notificó que " + 
           "esperemos comunicación para las 1:00 A.M.",
   },
   {
     speaker: KRU,
+    sprite: nk,
     text: "Es evidente que hemos sido descubiertos. La invasión a Cuba será inminente. Reúna al Presidium " + 
           "camarada " + protName + ". Los soviets deben participar de las decisiones que tomaremos de ahora en " + 
           "adelante por el bien de la madre patria.",
   },
   {
     speaker: GRALS,
+    sprite: sm,
     text: "Lo lógico sería anunciar un pacto de mutua defensa con Cuba a través de Radio Moscú para prevenir " + 
           "la invasión de la isla.",
   },
   {
     speaker: KGB,
+    sprite: kgb,
     text: "Otra opción es transferir el control de los misiles a los compañeros cubanos para que defiendan su " + 
           "territorio, y ordenar a los oficiales soviéticos en terreno que utilicen los misiles nucleares de " + 
           "corto alcance como medida defensiva.",
   },
   {
     speaker: MDD,
+    sprite: mdd,
     text: "Esta última opción reviste muchos riesgos. La decisión precipitada de un oficial podría conducirnos " + 
           "a una guerra nuclear. Deberíamos esperar el mensaje de Kennedy.",
   },

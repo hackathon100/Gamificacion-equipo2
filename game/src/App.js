@@ -75,7 +75,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener("beforeunload", e => (e.returnValue = "Unsaved changes will be lost."));
+    window.addEventListener("beforeunload", e => (e.returnValue = "Cambios no guardados se perderán."));
   }
 
   setFrameFromChoice(choice, routeBegins) {
@@ -285,7 +285,7 @@ class App extends Component {
   }
 
   startSkip() {
-    const intervalTime = prompt("How many milliseconds per frame would you like?", "75");
+    const intervalTime = prompt("Cuantos milisegundos por vista quieres avanzar?", "75");
     if (intervalTime > 0) {
       this.setState({
         isSkipping: true
@@ -364,9 +364,9 @@ class App extends Component {
       <SaveLoadMenu
         choicesExist={this.state.choicesExist}
         choiceOptions={this.state.choiceOptions}
-        confirmationMessage="Overwrite save?"
+        confirmationMessage="¿Sobreescribir guardado?"
         currentTime={this.state.currentTime}
-        menuType="Save"
+        menuType="Guardar"
         executeSlot={this.saveSlot.bind(this)}
         toggleMenu={this.toggleSaveMenu.bind(this)}
         speaker={this.state.speaker}
@@ -381,9 +381,9 @@ class App extends Component {
       <SaveLoadMenu
         choicesExist={this.state.choicesExist}
         choiceOptions={this.state.choiceOptions}
-        confirmationMessage="Load save?"
+        confirmationMessage="¿Cargar partida?"
         currentTime={this.state.currentTime}
-        menuType="Load"
+        menuType="Cargar"
         executeSlot={this.loadSlot.bind(this)}
         toggleMenu={this.toggleLoadMenu.bind(this)}
         speaker={this.state.speaker}
